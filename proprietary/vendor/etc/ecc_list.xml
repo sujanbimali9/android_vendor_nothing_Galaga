@@ -199,4 +199,9 @@
     <EccEntry Ecc="999" Category="0" Condition="2" Plmn = "420 04" />
     <!-- AERO15V-3248, add for SaudiArabia Zain End-->
 
+    <!-- BULB-7638, add for Egypt ECC begin-->
+    <EccEntry Ecc="123" Category="2" Condition="2" Plmn="602 FFF"/>
+    <EccEntry Ecc="180" Category="4" Condition="2" Plmn="602 FFF"/>
+    <!-- BULB-7638, add for Egypt ECC end-->
+
 </EccTable>
