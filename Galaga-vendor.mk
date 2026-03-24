@@ -94,8 +94,6 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Galaga/proprietary/vendor/etc/MNL_Config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/MNL_Config.xml \
     vendor/nothing/Galaga/proprietary/vendor/etc/VideoLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/VideoLog_dynamic.xml \
     vendor/nothing/Galaga/proprietary/vendor/etc/aac_richtap.config:$(TARGET_COPY_OUT_VENDOR)/etc/aac_richtap.config \
-    vendor/nothing/Galaga/proprietary/vendor/etc/apdb/APDB_MT6878___W2528:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6878___W2528 \
-    vendor/nothing/Galaga/proprietary/vendor/etc/apdb/APDB_MT6878___W2528_ENUM:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6878___W2528_ENUM \
     vendor/nothing/Galaga/proprietary/vendor/etc/audio_device.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_device.xml \
     vendor/nothing/Galaga/proprietary/vendor/etc/audio_param/AudioParamOptions_mgvi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/AudioParamOptions_mgvi.xml \
     vendor/nothing/Galaga/proprietary/vendor/etc/audio_param/AudioParamOptions_vext.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/AudioParamOptions_vext.xml \
@@ -253,14 +251,6 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Galaga/proprietary/vendor/etc/default_pd_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/etc/default_pd_calibration.bin \
     vendor/nothing/Galaga/proprietary/vendor/etc/displayconfig/display_id_4627039422300187648.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4627039422300187648.xml \
     vendor/nothing/Galaga/proprietary/vendor/etc/ecc_list.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list.xml \
-    vendor/nothing/Galaga/proprietary/vendor/etc/ecc_list_OP01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP01.xml \
-    vendor/nothing/Galaga/proprietary/vendor/etc/ecc_list_OP02.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP02.xml \
-    vendor/nothing/Galaga/proprietary/vendor/etc/ecc_list_OP09.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP09.xml \
-    vendor/nothing/Galaga/proprietary/vendor/etc/ecc_list_OP12.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP12.xml \
-    vendor/nothing/Galaga/proprietary/vendor/etc/ecc_list_OP17.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP17.xml \
-    vendor/nothing/Galaga/proprietary/vendor/etc/ecc_list_OP18.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP18.xml \
-    vendor/nothing/Galaga/proprietary/vendor/etc/ecc_list_OP20.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP20.xml \
-    vendor/nothing/Galaga/proprietary/vendor/etc/ecc_list_OP236.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP236.xml \
     vendor/nothing/Galaga/proprietary/vendor/etc/ecc_list_preference.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_preference.xml \
     vendor/nothing/Galaga/proprietary/vendor/etc/genshin.dla:$(TARGET_COPY_OUT_VENDOR)/etc/genshin.dla \
     vendor/nothing/Galaga/proprietary/vendor/etc/gnss/agps_profiles_conf2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/agps_profiles_conf2.xml \
@@ -347,7 +337,6 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Galaga/proprietary/vendor/etc/smartpa_param/tfa98xx_music.bin:$(TARGET_COPY_OUT_VENDOR)/etc/smartpa_param/tfa98xx_music.bin \
     vendor/nothing/Galaga/proprietary/vendor/etc/smartpa_param/tfa98xx_ringtone.bin:$(TARGET_COPY_OUT_VENDOR)/etc/smartpa_param/tfa98xx_ringtone.bin \
     vendor/nothing/Galaga/proprietary/vendor/etc/smartpa_param/tfa98xx_voice.bin:$(TARGET_COPY_OUT_VENDOR)/etc/smartpa_param/tfa98xx_voice.bin \
-    vendor/nothing/Galaga/proprietary/vendor/etc/special_pws_channel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/special_pws_channel.xml \
     vendor/nothing/Galaga/proprietary/vendor/etc/thermal/disable_skin_control.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/disable_skin_control.conf \
     vendor/nothing/Galaga/proprietary/vendor/etc/thermal/disable_thermal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/disable_thermal.conf \
     vendor/nothing/Galaga/proprietary/vendor/etc/thermal/disable_thermal_temp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/disable_thermal_temp.conf \
@@ -416,7 +405,6 @@ PRODUCT_PACKAGES += \
     vulkan.mali \
     mtkflp.default \
     mtkgeofence.default \
-    sensors.dynamic_sensor_hal \
     sensors.mediatek.V2.0 \
     sound_trigger.primary.default \
     vendor.mediatek.hardware.camera.atms_aidl@1.0-impl \
@@ -528,7 +516,6 @@ PRODUCT_PACKAGES += \
     libheichal \
     libhfmanager \
     libhfmanagerwrapper \
-    libhidparser \
     libhwm \
     libifcutils_mtk \
     libimagebuffer_wrapper \
@@ -641,8 +628,6 @@ PRODUCT_PACKAGES += \
     libvow_comp_test \
     libwa_widelens_undistort \
     libwa_widelens_undistort_impl \
-    libwapi \
-    libwifi-hal-mtk \
     libwpfa \
     arm.graphics-V4-ndk \
     arm.mali.platform-V2-ndk \
@@ -1105,9 +1090,8 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentXGoogleHEXAGON \
     ImsService \
     MtkGbaService \
+    MtkTelephonyAssist \
     com.android.hotwordenrollment.common.util \
-    mediatek-common \
-    mediatek-framework \
     mediatek-ims-base \
     mediatek-ims-common \
     mediatek-ims-extension-plugin \
@@ -1164,7 +1148,6 @@ PRODUCT_PACKAGES += \
     init.insmod \
     mcDriverDaemon \
     mnld \
-    jpegtool \
     mtk_agpsd \
     muxreport \
     netdagent \
@@ -1172,7 +1155,6 @@ PRODUCT_PACKAGES += \
     nvram_daemon \
     rcs_volte_stack \
     thermal_core \
-    thermal_intf \
     volte_clientapi_ua \
     volte_rcs_ua \
     wlan_assistant \
@@ -1234,7 +1216,6 @@ PRODUCT_PACKAGES += \
     vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_aov_ISP_info_db \
     vendor_bin_hw_android_hardware_graphics_allocator-V2-service-mediatek \
     vendor_bin_hw_camerahalserver \
-    vendor_bin_jpegtool \
     vendor_lib64_egl_libGLES_mali_so \
     vendor_lib64_hw_audio_primary_mt6878_so \
     vendor_lib64_hw_android_hardware_graphics_allocator-V2-mediatek_so \
