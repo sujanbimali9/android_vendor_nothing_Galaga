@@ -93,6 +93,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Galaga/proprietary/vendor/etc/AudioLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/AudioLog_dynamic.xml \
     vendor/nothing/Galaga/proprietary/vendor/etc/MNL_Config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/MNL_Config.xml \
     vendor/nothing/Galaga/proprietary/vendor/etc/VideoLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/VideoLog_dynamic.xml \
+		vendor/nothing/Galaga/proprietary/vendor/etc/SEC_THN31_FW_VTP.txt.bin:$(TARGET_COPY_OUT_VENDOR)/etc/SEC_THN31_FW_VTP.txt.bin \
     vendor/nothing/Galaga/proprietary/vendor/etc/aac_richtap.config:$(TARGET_COPY_OUT_VENDOR)/etc/aac_richtap.config \
     vendor/nothing/Galaga/proprietary/vendor/etc/audio_device.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_device.xml \
     vendor/nothing/Galaga/proprietary/vendor/etc/audio_param/AudioParamOptions_mgvi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/AudioParamOptions_mgvi.xml \
@@ -302,6 +303,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/mtkrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtkrild.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/muxreport.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/muxreport.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/netdagent.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netdagent.rc \
+    vendor/nothing/Galaga/proprietary/vendor/etc/init/nfc-service-tms.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nfc-service-tms.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/nvram_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nvram_daemon.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/tee.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tee.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/trustonic.rc \
@@ -315,6 +317,12 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/vendor.trustonic.tee@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee@1.1-service.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
+    vendor/nothing/Galaga/proprietary/vendor/etc/libese-tms.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libese-tms.conf \
+    vendor/nothing/Galaga/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
+    vendor/nothing/Galaga/proprietary/vendor/etc/libnfc-tms.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-tms.conf \
+    vendor/nothing/Galaga/proprietary/vendor/etc/libnfc-tms_RF.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-tms_RF.conf \
+    vendor/nothing/Galaga/proprietary/vendor/etc/libnfc-tms_RF_EC2.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-tms_RF_EC2.conf \
+    vendor/nothing/Galaga/proprietary/vendor/etc/libnfc-tms_RF_GB1.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-tms_RF_GB1.conf \
     vendor/nothing/Galaga/proprietary/vendor/etc/mali_platform.config:$(TARGET_COPY_OUT_VENDOR)/etc/mali_platform.config \
     vendor/nothing/Galaga/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
     vendor/nothing/Galaga/proprietary/vendor/etc/meow.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/meow.cfg \
@@ -385,6 +393,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Galaga/proprietary/vendor/firmware/wifi.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi.cfg
 
 PRODUCT_PACKAGES += \
+    7816-3-T1 \
     APUWareApusysAidlServer \
     APUWareUtilsAidlServer \
     libGLES_meow \
@@ -1011,6 +1020,10 @@ PRODUCT_PACKAGES += \
     sc202cs_mipi_raw_tuning \
     sc202cssj_mipi_raw_IdxMgr \
     sc202cssj_mipi_raw_tuning \
+    nfc_nci.thn31nfc.tms \
+    tms-cos-dl-common \
+    tms-cos-dl-ree \
+    tms-utils \
     vendor.mediatek.hardware.apmonitor-V1-ndk \
     vendor.mediatek.hardware.apmonitor@2.0 \
     vendor.mediatek.hardware.apuware.apusys-V3-ndk \
@@ -1067,6 +1080,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.rcs@2.0 \
     vendor.mediatek.hardware.videotelephony-V1-ndk-vendor \
     vendor.noth.hardware.sensor.sensor_extension-V1-ndk \
+    vendor.tms.tmsnfc_aidl-V1-ndk \
     vendor.trustonic.tee.tui@1.0 \
     vendor.trustonic.tee@1.0 \
     vendor.trustonic.tee@1.1 \
@@ -1130,6 +1144,7 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@3.2-service \
     android.hardware.media.c2@1.2-mediatek-64b \
     android.hardware.neuralnetworks-shim-service-mtk \
+    android.hardware.nfc-service-tms \
     android.hardware.secure_element@1.2-service-mediatek \
     android.hardware.security.keymint@3.0-service.trustonic \
     android.hardware.graphics.allocator-V2-service-mediatek.mt6878 \

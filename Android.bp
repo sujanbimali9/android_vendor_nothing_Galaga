@@ -9,6 +9,42 @@ soong_namespace {
     ],
 }
 
+
+cc_prebuilt_library_shared {
+    name: "7816-3-T1",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/7816-3-T1.so",
+            ],
+            shared_libs: [
+                "vendor.tms.tmsnfc_aidl-V1-ndk",
+                "libbinder_ndk",
+                "libcutils",
+                "libhardware",
+                "libhidlbase",
+                "libutils",
+                "liblog",
+                "libbase",
+                "android.hardware.nfc@1.0",
+                "libutilscallstack",
+                "tms-utils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
 cc_prebuilt_library_shared {
     name: "APUWareApusysAidlServer",
     owner: "nothing",
@@ -20637,6 +20673,139 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "nfc_nci.thn31nfc.tms",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/nfc_nci.thn31nfc.tms.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libcutils",
+                "libhardware",
+                "libhardware_legacy",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "tms-utils",
+                "tms-cos-dl-common",
+                "tms-cos-dl-ree",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "tms-cos-dl-common",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/tms-cos-dl-common.so",
+            ],
+            shared_libs: [
+                "vendor.tms.tmsnfc_aidl-V1-ndk",
+                "libbinder_ndk",
+                "libcutils",
+                "libhardware",
+                "libhidlbase",
+                "libutils",
+                "liblog",
+                "libbase",
+                "tms-utils",
+                "7816-3-T1",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "tms-cos-dl-ree",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/tms-cos-dl-ree.so",
+            ],
+            shared_libs: [
+                "vendor.tms.tmsnfc_aidl-V1-ndk",
+                "libbinder_ndk",
+                "libcutils",
+                "libhardware",
+                "libhidlbase",
+                "libutils",
+                "liblog",
+                "libbase",
+                "android.hardware.nfc@1.0",
+                "libutilscallstack",
+                "tms-utils",
+                "tms-cos-dl-common",
+                "7816-3-T1",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "tms-utils",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/tms-utils.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libbase",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.mediatek.hardware.apmonitor-V1-ndk",
     owner: "nothing",
     strip: {
@@ -22158,6 +22327,31 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.tms.tmsnfc_aidl-V1-ndk",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.tms.tmsnfc_aidl-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.trustonic.tee.tui@1.0",
     owner: "nothing",
     strip: {
@@ -23365,6 +23559,42 @@ cc_prebuilt_binary {
                 "libnativewindow",
                 "libutils",
                 "libneuralnetworks_sl_driver_mtk_prebuilt",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "android.hardware.nfc-service-tms",
+    owner: "nothing",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/android.hardware.nfc-service-tms",
+            ],
+            shared_libs: [
+                "libbase",
+                "liblog",
+                "libutils",
+                "libbinder_ndk",
+                "android.hardware.nfc-V1-ndk",
+                "nfc_nci.thn31nfc.tms",
+                "libhardware",
+                "libhardware_legacy",
+                "vendor.tms.tmsnfc_aidl-V1-ndk",
+                "tms-utils",
+                "libcutils",
                 "libc++",
                 "libc",
                 "libm",
