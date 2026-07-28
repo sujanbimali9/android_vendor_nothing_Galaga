@@ -92,8 +92,8 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/mt6878/ISP_info.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/mt6878/ISP_info.db \
     vendor/nothing/Galaga/proprietary/vendor/etc/AudioLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/AudioLog_dynamic.xml \
     vendor/nothing/Galaga/proprietary/vendor/etc/MNL_Config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/MNL_Config.xml \
+    vendor/nothing/Galaga/proprietary/vendor/etc/SEC_THN31_FW_VTP.txt.bin:$(TARGET_COPY_OUT_VENDOR)/etc/SEC_THN31_FW_VTP.txt.bin \
     vendor/nothing/Galaga/proprietary/vendor/etc/VideoLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/VideoLog_dynamic.xml \
-		vendor/nothing/Galaga/proprietary/vendor/etc/SEC_THN31_FW_VTP.txt.bin:$(TARGET_COPY_OUT_VENDOR)/etc/SEC_THN31_FW_VTP.txt.bin \
     vendor/nothing/Galaga/proprietary/vendor/etc/aac_richtap.config:$(TARGET_COPY_OUT_VENDOR)/etc/aac_richtap.config \
     vendor/nothing/Galaga/proprietary/vendor/etc/audio_device.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_device.xml \
     vendor/nothing/Galaga/proprietary/vendor/etc/audio_param/AudioParamOptions_mgvi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/AudioParamOptions_mgvi.xml \
@@ -275,6 +275,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Galaga/proprietary/vendor/etc/gralloc/dpu_aeu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/dpu_aeu.xml \
     vendor/nothing/Galaga/proprietary/vendor/etc/gralloc/gpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/gpu.xml \
     vendor/nothing/Galaga/proprietary/vendor/etc/gralloc/vpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/vpu.xml \
+    vendor/nothing/Galaga/proprietary/vendor/etc/ics_sfdc.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/ics_sfdc.cfg \
     vendor/nothing/Galaga/proprietary/vendor/etc/init.insmod.mt6878.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.mt6878.cfg \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/android.hardware.gatekeeper-service.trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper-service.trustonic.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/android.hardware.gnss-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-service.mediatek.rc \
@@ -526,6 +527,7 @@ PRODUCT_PACKAGES += \
     libhfmanager \
     libhfmanagerwrapper \
     libhwm \
+    libics_haptic \
     libifcutils_mtk \
     libimagebuffer_wrapper \
     libion_mtk \
@@ -637,6 +639,7 @@ PRODUCT_PACKAGES += \
     libvow_comp_test \
     libwa_widelens_undistort \
     libwa_widelens_undistort_impl \
+    libwifi-hal-mtk \
     libwpfa \
     arm.graphics-V4-ndk \
     arm.mali.platform-V2-ndk \
@@ -1105,13 +1108,13 @@ PRODUCT_PACKAGES += \
     ImsService \
     MtkGbaService \
     MtkTelephonyAssist \
-    com.android.hotwordenrollment.common.util \
     mediatek-ims-base \
     mediatek-ims-common \
-    mediatek-ims-extension-plugin \
     mediatek-telecom-common \
     mediatek-telephony-base \
     mediatek-telephony-common \
+    com.android.hotwordenrollment.common.util \
+    mediatek-ims-extension-plugin \
     CommandService.xml \
     android.hardware.gatekeeper-service.trustonic.xml \
     android.hardware.neuralnetworks-shim-service-mtk.xml \
@@ -1621,3 +1624,10 @@ PRODUCT_PACKAGES += \
     vendor_lib64_sc202cs_mipi_raw_tuning_so \
     vendor_lib64_sc202cssj_mipi_raw_IdxMgr_so \
     vendor_lib64_sc202cssj_mipi_raw_tuning_so
+
+PRODUCT_BOOT_JARS += \
+    mediatek-ims-base \
+    mediatek-ims-common \
+    mediatek-telecom-common \
+    mediatek-telephony-base \
+    mediatek-telephony-common
