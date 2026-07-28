@@ -9,7 +9,6 @@ soong_namespace {
     ],
 }
 
-
 cc_prebuilt_library_shared {
     name: "7816-3-T1",
     owner: "nothing",
@@ -4155,6 +4154,33 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libics_haptic",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libics_haptic.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "liblog",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libifcutils_mtk",
     owner: "nothing",
     strip: {
@@ -7305,6 +7331,35 @@ cc_prebuilt_library_shared {
                 "libGLESv3",
                 "libnativewindow",
                 "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwifi-hal-mtk",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libwifi-hal-mtk.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libcutils",
+                "liblog",
+                "libnl",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
             ],
         },
     },
@@ -23003,6 +23058,46 @@ android_app_import {
 }
 
 dex_import {
+    name: "mediatek-ims-base",
+    owner: "nothing",
+    jars: [
+        "proprietary/system/framework/mediatek-ims-base.jar",
+    ],
+}
+
+dex_import {
+    name: "mediatek-ims-common",
+    owner: "nothing",
+    jars: [
+        "proprietary/system/framework/mediatek-ims-common.jar",
+    ],
+}
+
+dex_import {
+    name: "mediatek-telecom-common",
+    owner: "nothing",
+    jars: [
+        "proprietary/system/framework/mediatek-telecom-common.jar",
+    ],
+}
+
+dex_import {
+    name: "mediatek-telephony-base",
+    owner: "nothing",
+    jars: [
+        "proprietary/system/framework/mediatek-telephony-base.jar",
+    ],
+}
+
+dex_import {
+    name: "mediatek-telephony-common",
+    owner: "nothing",
+    jars: [
+        "proprietary/system/framework/mediatek-telephony-common.jar",
+    ],
+}
+
+dex_import {
     name: "com.android.hotwordenrollment.common.util",
     owner: "nothing",
     jars: [
@@ -23012,55 +23107,10 @@ dex_import {
 }
 
 dex_import {
-    name: "mediatek-ims-base",
-    owner: "nothing",
-    jars: [
-        "proprietary/system_ext/framework/mediatek-ims-base.jar",
-    ],
-    system_ext_specific: true,
-}
-
-dex_import {
-    name: "mediatek-ims-common",
-    owner: "nothing",
-    jars: [
-        "proprietary/system_ext/framework/mediatek-ims-common.jar",
-    ],
-    system_ext_specific: true,
-}
-
-dex_import {
     name: "mediatek-ims-extension-plugin",
     owner: "nothing",
     jars: [
         "proprietary/system_ext/framework/mediatek-ims-extension-plugin.jar",
-    ],
-    system_ext_specific: true,
-}
-
-dex_import {
-    name: "mediatek-telecom-common",
-    owner: "nothing",
-    jars: [
-        "proprietary/system_ext/framework/mediatek-telecom-common.jar",
-    ],
-    system_ext_specific: true,
-}
-
-dex_import {
-    name: "mediatek-telephony-base",
-    owner: "nothing",
-    jars: [
-        "proprietary/system_ext/framework/mediatek-telephony-base.jar",
-    ],
-    system_ext_specific: true,
-}
-
-dex_import {
-    name: "mediatek-telephony-common",
-    owner: "nothing",
-    jars: [
-        "proprietary/system_ext/framework/mediatek-telephony-common.jar",
     ],
     system_ext_specific: true,
 }
