@@ -92,8 +92,8 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/mt6878/ISP_info.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/mt6878/ISP_info.db \
     vendor/nothing/Galaga/proprietary/vendor/etc/AudioLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/AudioLog_dynamic.xml \
     vendor/nothing/Galaga/proprietary/vendor/etc/MNL_Config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/MNL_Config.xml \
+    vendor/nothing/Galaga/proprietary/vendor/etc/SEC_THN31_FW_VTP.txt.bin:$(TARGET_COPY_OUT_VENDOR)/etc/SEC_THN31_FW_VTP.txt.bin \
     vendor/nothing/Galaga/proprietary/vendor/etc/VideoLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/VideoLog_dynamic.xml \
-		vendor/nothing/Galaga/proprietary/vendor/etc/SEC_THN31_FW_VTP.txt.bin:$(TARGET_COPY_OUT_VENDOR)/etc/SEC_THN31_FW_VTP.txt.bin \
     vendor/nothing/Galaga/proprietary/vendor/etc/aac_richtap.config:$(TARGET_COPY_OUT_VENDOR)/etc/aac_richtap.config \
     vendor/nothing/Galaga/proprietary/vendor/etc/audio_device.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_device.xml \
     vendor/nothing/Galaga/proprietary/vendor/etc/audio_param/AudioParamOptions_mgvi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/AudioParamOptions_mgvi.xml \
@@ -275,6 +275,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Galaga/proprietary/vendor/etc/gralloc/dpu_aeu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/dpu_aeu.xml \
     vendor/nothing/Galaga/proprietary/vendor/etc/gralloc/gpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/gpu.xml \
     vendor/nothing/Galaga/proprietary/vendor/etc/gralloc/vpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/vpu.xml \
+    vendor/nothing/Galaga/proprietary/vendor/etc/ics_sfdc.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/ics_sfdc.cfg \
     vendor/nothing/Galaga/proprietary/vendor/etc/init.insmod.mt6878.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.mt6878.cfg \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/android.hardware.gatekeeper-service.trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper-service.trustonic.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/android.hardware.gnss-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-service.mediatek.rc \
@@ -285,7 +286,6 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/android.hardware.security.keymint@3.0-service.trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint@3.0-service.trustonic.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/android.hardware.tetheroffload-V1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.tetheroffload-V1-service.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
-    vendor/nothing/Galaga/proprietary/vendor/etc/init/chipinfo_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/chipinfo_init.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/fuelgauged_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_init.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/fuelgauged_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_nvram_init.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/hw/init.mtkgki.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mtkgki.rc \
@@ -302,7 +302,6 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/mtk_gnss.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_gnss.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/mtkrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtkrild.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/muxreport.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/muxreport.rc \
-    vendor/nothing/Galaga/proprietary/vendor/etc/init/netdagent.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netdagent.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/nfc-service-tms.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nfc-service-tms.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/nvram_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nvram_daemon.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/tee.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tee.rc \
@@ -396,6 +395,7 @@ PRODUCT_PACKAGES += \
     7816-3-T1 \
     APUWareApusysAidlServer \
     APUWareUtilsAidlServer \
+    android.frameworks.displayservice@1.0 \
     libGLES_meow \
     libMEOW_data \
     libMEOW_gift \
@@ -509,7 +509,7 @@ PRODUCT_PACKAGES += \
     libfgauge_gm30 \
     libfile_op \
     libforkexecwrap \
-    libformatter \
+    libformatter-v33 \
     libged \
     libgf_hal \
     libgoodixsmartpaparser \
@@ -526,6 +526,7 @@ PRODUCT_PACKAGES += \
     libhfmanager \
     libhfmanagerwrapper \
     libhwm \
+    libics_haptic \
     libifcutils_mtk \
     libimagebuffer_wrapper \
     libion_mtk \
@@ -537,6 +538,7 @@ PRODUCT_PACKAGES += \
     libladder \
     libmipc \
     libmnetlink_v104 \
+    libmnl-v33 \
     libmp3dec_mtk \
     libmpbase \
     libmsbc_mtk \
@@ -637,6 +639,7 @@ PRODUCT_PACKAGES += \
     libvow_comp_test \
     libwa_widelens_undistort \
     libwa_widelens_undistort_impl \
+    libwifi-hal-mtk \
     libwpfa \
     arm.graphics-V4-ndk \
     arm.mali.platform-V2-ndk \
@@ -863,7 +866,6 @@ PRODUCT_PACKAGES += \
     libmmagent \
     libmml \
     libmmlpqImpl \
-    libmnl \
     libmorpho_RawDeepDenoise \
     libmtk_drvb \
     libmtkcam.atmseventmgr \
@@ -1105,13 +1107,12 @@ PRODUCT_PACKAGES += \
     ImsService \
     MtkGbaService \
     MtkTelephonyAssist \
-    com.android.hotwordenrollment.common.util \
     mediatek-ims-base \
     mediatek-ims-common \
-    mediatek-ims-extension-plugin \
     mediatek-telecom-common \
     mediatek-telephony-base \
-    mediatek-telephony-common \
+    com.android.hotwordenrollment.common.util \
+    mediatek-ims-extension-plugin \
     CommandService.xml \
     android.hardware.gatekeeper-service.trustonic.xml \
     android.hardware.neuralnetworks-shim-service-mtk.xml \
@@ -1135,7 +1136,6 @@ PRODUCT_PACKAGES += \
     vendor.nothing.hardware.biometrics.fingerprint-service.xml \
     ccci_mdinit \
     ccci_rpcd \
-    chipinfo \
     conninfra_loader \
     fuelgauged \
     fuelgauged_nvram \
@@ -1165,7 +1165,6 @@ PRODUCT_PACKAGES += \
     mnld \
     mtk_agpsd \
     muxreport \
-    netdagent \
     ntf-service \
     nvram_daemon \
     rcs_volte_stack \
@@ -1464,7 +1463,6 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libmmagent_so \
     vendor_lib64_libmml_so \
     vendor_lib64_libmmlpqImpl_so \
-    vendor_lib64_libmnl_so \
     vendor_lib64_libmorpho_RawDeepDenoise_so \
     vendor_lib64_libmtk_drvb_so \
     vendor_lib64_libmtkcam_atmseventmgr_so \
@@ -1621,3 +1619,9 @@ PRODUCT_PACKAGES += \
     vendor_lib64_sc202cs_mipi_raw_tuning_so \
     vendor_lib64_sc202cssj_mipi_raw_IdxMgr_so \
     vendor_lib64_sc202cssj_mipi_raw_tuning_so
+
+PRODUCT_BOOT_JARS += \
+    mediatek-ims-base \
+    mediatek-ims-common \
+    mediatek-telecom-common \
+    mediatek-telephony-base

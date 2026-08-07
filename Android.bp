@@ -9,7 +9,6 @@ soong_namespace {
     ],
 }
 
-
 cc_prebuilt_library_shared {
     name: "7816-3-T1",
     owner: "nothing",
@@ -102,6 +101,34 @@ cc_prebuilt_library_shared {
                 "libgralloc_extra",
                 "libnativewindow",
                 "vendor.mediatek.hardware.apuware.utils-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "android.frameworks.displayservice@1.0",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/android.frameworks.displayservice@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -2906,7 +2933,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libcodec2_mtk_vdec.so",
             ],
             shared_libs: [
-                "libformatter",
+                "libformatter-v33",
                 "libdpframework",
                 "android.hardware.graphics.bufferqueue@2.0",
                 "libui",
@@ -2959,7 +2986,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libcodec2_mtk_venc.so",
             ],
             shared_libs: [
-                "libformatter",
+                "libformatter-v33",
                 "libdpframework",
                 "android.hardware.graphics.bufferqueue@2.0",
                 "libui",
@@ -3655,7 +3682,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libformatter",
+    name: "libformatter-v33",
     owner: "nothing",
     strip: {
         none: true,
@@ -3663,7 +3690,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libformatter.so",
+                "proprietary/vendor/lib64/libformatter-v33.so",
             ],
             shared_libs: [
                 "libion_mtk",
@@ -4155,6 +4182,33 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libics_haptic",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libics_haptic.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "liblog",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libifcutils_mtk",
     owner: "nothing",
     strip: {
@@ -4428,6 +4482,30 @@ cc_prebuilt_library_shared {
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/libmnetlink_v104.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmnl-v33",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmnl-v33.so",
             ],
             shared_libs: [
                 "libc++",
@@ -7305,6 +7383,35 @@ cc_prebuilt_library_shared {
                 "libGLESv3",
                 "libnativewindow",
                 "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libwifi-hal-mtk",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libwifi-hal-mtk.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libcutils",
+                "liblog",
+                "libnl",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
             ],
         },
     },
@@ -14776,31 +14883,6 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "liblog",
                 "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "mt6878",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmnl",
-    owner: "nothing",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/mt6878/libmnl.so",
-            ],
-            shared_libs: [
                 "libc++",
                 "libc",
                 "libm",
@@ -22725,6 +22807,7 @@ cc_prebuilt_library_shared {
                 "proprietary/system_ext/lib64/libsink-mtk.so",
             ],
             shared_libs: [
+                "libaudiotrack_shim",
                 "libbinder",
                 "libcutils",
                 "libgui",
@@ -23003,6 +23086,38 @@ android_app_import {
 }
 
 dex_import {
+    name: "mediatek-ims-base",
+    owner: "nothing",
+    jars: [
+        "proprietary/system/framework/mediatek-ims-base.jar",
+    ],
+}
+
+dex_import {
+    name: "mediatek-ims-common",
+    owner: "nothing",
+    jars: [
+        "proprietary/system/framework/mediatek-ims-common.jar",
+    ],
+}
+
+dex_import {
+    name: "mediatek-telecom-common",
+    owner: "nothing",
+    jars: [
+        "proprietary/system/framework/mediatek-telecom-common.jar",
+    ],
+}
+
+dex_import {
+    name: "mediatek-telephony-base",
+    owner: "nothing",
+    jars: [
+        "proprietary/system/framework/mediatek-telephony-base.jar",
+    ],
+}
+
+dex_import {
     name: "com.android.hotwordenrollment.common.util",
     owner: "nothing",
     jars: [
@@ -23012,55 +23127,10 @@ dex_import {
 }
 
 dex_import {
-    name: "mediatek-ims-base",
-    owner: "nothing",
-    jars: [
-        "proprietary/system_ext/framework/mediatek-ims-base.jar",
-    ],
-    system_ext_specific: true,
-}
-
-dex_import {
-    name: "mediatek-ims-common",
-    owner: "nothing",
-    jars: [
-        "proprietary/system_ext/framework/mediatek-ims-common.jar",
-    ],
-    system_ext_specific: true,
-}
-
-dex_import {
     name: "mediatek-ims-extension-plugin",
     owner: "nothing",
     jars: [
         "proprietary/system_ext/framework/mediatek-ims-extension-plugin.jar",
-    ],
-    system_ext_specific: true,
-}
-
-dex_import {
-    name: "mediatek-telecom-common",
-    owner: "nothing",
-    jars: [
-        "proprietary/system_ext/framework/mediatek-telecom-common.jar",
-    ],
-    system_ext_specific: true,
-}
-
-dex_import {
-    name: "mediatek-telephony-base",
-    owner: "nothing",
-    jars: [
-        "proprietary/system_ext/framework/mediatek-telephony-base.jar",
-    ],
-    system_ext_specific: true,
-}
-
-dex_import {
-    name: "mediatek-telephony-common",
-    owner: "nothing",
-    jars: [
-        "proprietary/system_ext/framework/mediatek-telephony-common.jar",
     ],
     system_ext_specific: true,
 }
@@ -23311,14 +23381,6 @@ cc_prebuilt_binary {
         none: true,
     },
     prefer: true,
-    soc_specific: true,
-}
-
-sh_binary {
-    name: "chipinfo",
-    owner: "nothing",
-    src: "proprietary/vendor/bin/chipinfo",
-    filename: "chipinfo",
     soc_specific: true,
 }
 
@@ -24178,7 +24240,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/mnld",
             ],
             shared_libs: [
-                "libmnl",
+                "libmnl-v33",
                 "libcurl",
                 "libcutils",
                 "libnvram",
@@ -24256,38 +24318,6 @@ cc_prebuilt_binary {
             shared_libs: [
                 "libmtkrillog",
                 "libmtkproperty",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "netdagent",
-    owner: "nothing",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/netdagent",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "liblog",
-                "libforkexecwrap",
-                "libutils",
-                "libifcutils_mtk",
-                "libbinder_ndk",
-                "vendor.mediatek.hardware.netdagent-V1-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -26564,13 +26594,6 @@ install_symlink {
     soc_specific: true,
     installed_location: "lib64/libmmlpqImpl.so",
     symlink_target: "/vendor/lib64/mt6878/libmmlpqImpl.so",
-}
-
-install_symlink {
-    name: "vendor_lib64_libmnl_so",
-    soc_specific: true,
-    installed_location: "lib64/libmnl.so",
-    symlink_target: "/vendor/lib64/mt6878/libmnl.so",
 }
 
 install_symlink {
