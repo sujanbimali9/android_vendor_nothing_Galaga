@@ -315,7 +315,6 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/vendor.nothing.hardware.biometrics.fingerprint-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.nothing.hardware.biometrics.fingerprint-service.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/vendor.trustonic.tee@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee@1.1-service.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
-    vendor/nothing/Galaga/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/libese-tms.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libese-tms.conf \
     vendor/nothing/Galaga/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/nothing/Galaga/proprietary/vendor/etc/libnfc-tms.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-tms.conf \
@@ -443,7 +442,6 @@ PRODUCT_PACKAGES += \
     libaal_key \
     libaal_sec \
     libadpcmdec_mtk \
-    libaedv \
     libalsautils-stock \
     libanc_supervq \
     libapmonitor_vendor \
@@ -535,7 +533,6 @@ PRODUCT_PACKAGES += \
     libjpeg-alpha-oal_vendor \
     libjpeg-alpha_vendor \
     libksensor \
-    libladder \
     libmipc \
     libmnetlink_v104 \
     libmnl-v33 \
@@ -1107,12 +1104,12 @@ PRODUCT_PACKAGES += \
     ImsService \
     MtkGbaService \
     MtkTelephonyAssist \
+    com.android.hotwordenrollment.common.util \
     mediatek-ims-base \
     mediatek-ims-common \
+    mediatek-ims-extension-plugin \
     mediatek-telecom-common \
     mediatek-telephony-base \
-    com.android.hotwordenrollment.common.util \
-    mediatek-ims-extension-plugin \
     CommandService.xml \
     android.hardware.gatekeeper-service.trustonic.xml \
     android.hardware.neuralnetworks-shim-service-mtk.xml \
@@ -1171,7 +1168,6 @@ PRODUCT_PACKAGES += \
     thermal_core \
     volte_clientapi_ua \
     volte_rcs_ua \
-    wlan_assistant \
     vtservice
 
 PRODUCT_PACKAGES += \
@@ -1621,7 +1617,7 @@ PRODUCT_PACKAGES += \
     vendor_lib64_sc202cssj_mipi_raw_tuning_so
 
 PRODUCT_BOOT_JARS += \
-    mediatek-ims-base \
-    mediatek-ims-common \
-    mediatek-telecom-common \
-    mediatek-telephony-base
+    system_ext:mediatek-ims-base \
+    system_ext:mediatek-ims-common \
+    system_ext:mediatek-telecom-common \
+    system_ext:mediatek-telephony-base
