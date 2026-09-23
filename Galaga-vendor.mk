@@ -290,9 +290,12 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/fuelgauged_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_nvram_init.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/hw/init.mtkgki.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mtkgki.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/hw/init.sensor_2_0.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.sensor_2_0.rc \
+    vendor/nothing/Galaga/proprietary/vendor/etc/init/init.bip_ap.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bip_ap.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/init.bt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bt_drv.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/init.cccimdinit.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccimdinit.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/init.cccirpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccirpcd.rc \
+    vendor/nothing/Galaga/proprietary/vendor/etc/init/init.gps_pwr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps_pwr.rc \
+    vendor/nothing/Galaga/proprietary/vendor/etc/init/init.gps_scp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps_scp.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/init.ntf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.ntf.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/init.thermal_core.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermal_core.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/init.touch.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.touch.rc \
@@ -300,6 +303,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/init.wlan_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wlan_drv.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/mtk_agpsd_p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_agpsd_p.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/mtk_gnss.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_gnss.rc \
+    vendor/nothing/Galaga/proprietary/vendor/etc/init/mtk_lbs_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_lbs_service.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/mtkrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtkrild.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/muxreport.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/muxreport.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/nfc-service-tms.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nfc-service-tms.rc \
@@ -314,7 +318,6 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/vendor.noth.hardware.sensor.sensor_extension-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.noth.hardware.sensor.sensor_extension-service.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/vendor.nothing.hardware.biometrics.fingerprint-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.nothing.hardware.biometrics.fingerprint-service.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/vendor.trustonic.tee@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee@1.1-service.rc \
-    vendor/nothing/Galaga/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/libese-tms.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libese-tms.conf \
     vendor/nothing/Galaga/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/nothing/Galaga/proprietary/vendor/etc/libnfc-tms.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-tms.conf \
@@ -600,8 +603,6 @@ PRODUCT_PACKAGES += \
     libpqxmlflagparser \
     libpqxmlparser \
     libratconfig \
-    librcs_interface \
-    librcs_volte_core \
     libremosaic_wrapper \
     libremosaiclib \
     librgbwlightsensor \
@@ -1019,6 +1020,7 @@ PRODUCT_PACKAGES += \
     sc202cs_mipi_raw_tuning \
     sc202cssj_mipi_raw_IdxMgr \
     sc202cssj_mipi_raw_tuning \
+    mtk_lbs_service-impl \
     nfc_nci.thn31nfc.tms \
     tms-cos-dl-common \
     tms-cos-dl-ree \
@@ -1039,11 +1041,11 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.camera.isphal-V1-ndk \
     vendor.mediatek.hardware.camera.postproc@1.0 \
     vendor.mediatek.hardware.camera.security@1.0 \
-    vendor.mediatek.hardware.clientapi-V1-ndk \
     vendor.mediatek.hardware.composer_ext-V1-ndk \
     vendor.mediatek.hardware.composer_ext@1.0 \
     vendor.mediatek.hardware.gnss-V1-ndk \
     vendor.mediatek.hardware.gnss.batching-V1-ndk \
+    vendor.mediatek.hardware.lbs-V1-ndk \
     vendor.mediatek.hardware.mmagent-V1-ndk \
     vendor.mediatek.hardware.mmlpq-V3-ndk \
     vendor.mediatek.hardware.mtkradioex.assist-V1-ndk \
@@ -1075,8 +1077,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq_aidl-V2-ndk \
     vendor.mediatek.hardware.pq_aidl-V4-ndk \
     vendor.mediatek.hardware.pq_aidl-V7-ndk \
-    vendor.mediatek.hardware.rcs-V1-ndk \
-    vendor.mediatek.hardware.rcs@2.0 \
     vendor.mediatek.hardware.videotelephony-V1-ndk-vendor \
     vendor.noth.hardware.sensor.sensor_extension-V1-ndk \
     vendor.tms.tmsnfc_aidl-V1-ndk \
@@ -1128,9 +1128,11 @@ PRODUCT_PACKAGES += \
     manifest_media_c2_V1_2_default.xml \
     manifest_mmlpq.xml \
     mapper.mediatek.xml \
+    mtk_lbs_service.xml \
     mtkgnss-batching.xml \
     vendor.noth.hardware.sensor.sensor_extension-service.xml \
     vendor.nothing.hardware.biometrics.fingerprint-service.xml \
+    bip_ap \
     ccci_mdinit \
     ccci_rpcd \
     conninfra_loader \
@@ -1161,13 +1163,11 @@ PRODUCT_PACKAGES += \
     mcDriverDaemon \
     mnld \
     mtk_agpsd \
+    mtk_lbs_service \
     muxreport \
     ntf-service \
     nvram_daemon \
-    rcs_volte_stack \
     thermal_core \
-    volte_clientapi_ua \
-    volte_rcs_ua \
     vtservice
 
 PRODUCT_PACKAGES += \
