@@ -279,6 +279,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Galaga/proprietary/vendor/etc/init.insmod.mt6878.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.mt6878.cfg \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/android.hardware.gatekeeper-service.trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper-service.trustonic.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/android.hardware.gnss-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-service.mediatek.rc \
+    vendor/nothing/Galaga/proprietary/vendor/etc/init/android.hardware.graphics.allocator-V2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator-V2-service-mediatek.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/android.hardware.graphics.composer@3.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.composer@3.2-service.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/android.hardware.media.c2@1.2-mediatek-64b.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2@1.2-mediatek-64b.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc \
@@ -293,6 +294,8 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/init.bt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bt_drv.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/init.cccimdinit.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccimdinit.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/init.cccirpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccirpcd.rc \
+    vendor/nothing/Galaga/proprietary/vendor/etc/init/init.gps_pwr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps_pwr.rc \
+    vendor/nothing/Galaga/proprietary/vendor/etc/init/init.gps_scp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps_scp.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/init.ntf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.ntf.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/init.thermal_core.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermal_core.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/init.touch.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.touch.rc \
@@ -300,6 +303,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/init.wlan_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wlan_drv.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/mtk_agpsd_p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_agpsd_p.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/mtk_gnss.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_gnss.rc \
+    vendor/nothing/Galaga/proprietary/vendor/etc/init/mtk_lbs_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_lbs_service.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/mtkrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtkrild.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/muxreport.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/muxreport.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/nfc-service-tms.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nfc-service-tms.rc \
@@ -394,6 +398,7 @@ PRODUCT_PACKAGES += \
     7816-3-T1 \
     APUWareApusysAidlServer \
     APUWareUtilsAidlServer \
+    android.frameworks.displayservice@1.0 \
     libGLES_meow \
     libMEOW_data \
     libMEOW_gift \
@@ -506,7 +511,7 @@ PRODUCT_PACKAGES += \
     libfgauge_gm30 \
     libfile_op \
     libforkexecwrap \
-    libformatter \
+    libformatter-mtk \
     libged \
     libgf_hal \
     libgoodixsmartpaparser \
@@ -526,14 +531,13 @@ PRODUCT_PACKAGES += \
     libics_haptic \
     libifcutils_mtk \
     libimagebuffer_wrapper \
-    libion_mtk \
-    libion_ulit \
     libjni_rater_api \
     libjpeg-alpha-oal_vendor \
     libjpeg-alpha_vendor \
     libksensor \
     libmipc \
     libmnetlink_v104 \
+    libmnl-mtk \
     libmp3dec_mtk \
     libmpbase \
     libmsbc_mtk \
@@ -861,7 +865,6 @@ PRODUCT_PACKAGES += \
     libmmagent \
     libmml \
     libmmlpqImpl \
-    libmnl \
     libmorpho_RawDeepDenoise \
     libmtk_drvb \
     libmtkcam.atmseventmgr \
@@ -1018,6 +1021,7 @@ PRODUCT_PACKAGES += \
     sc202cs_mipi_raw_tuning \
     sc202cssj_mipi_raw_IdxMgr \
     sc202cssj_mipi_raw_tuning \
+    mtk_lbs_service-impl \
     nfc_nci.thn31nfc.tms \
     tms-cos-dl-common \
     tms-cos-dl-ree \
@@ -1043,6 +1047,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.composer_ext@1.0 \
     vendor.mediatek.hardware.gnss-V1-ndk \
     vendor.mediatek.hardware.gnss.batching-V1-ndk \
+    vendor.mediatek.hardware.lbs-V1-ndk \
     vendor.mediatek.hardware.mmagent-V1-ndk \
     vendor.mediatek.hardware.mmlpq-V3-ndk \
     vendor.mediatek.hardware.mtkradioex.assist-V1-ndk \
@@ -1105,11 +1110,7 @@ PRODUCT_PACKAGES += \
     MtkTelephonyAssist \
     com.android.hotwordenrollment.common.util \
     mediatek-ims-base \
-    mediatek-ims-common \
     mediatek-ims-extension-plugin \
-    mediatek-telecom-common \
-    mediatek-telephony-base \
-    mediatek-telephony-common \
     CommandService.xml \
     android.hardware.gatekeeper-service.trustonic.xml \
     android.hardware.neuralnetworks-shim-service-mtk.xml \
@@ -1128,6 +1129,7 @@ PRODUCT_PACKAGES += \
     manifest_media_c2_V1_2_default.xml \
     manifest_mmlpq.xml \
     mapper.mediatek.xml \
+    mtk_lbs_service.xml \
     mtkgnss-batching.xml \
     vendor.noth.hardware.sensor.sensor_extension-service.xml \
     vendor.nothing.hardware.biometrics.fingerprint-service.xml \
@@ -1161,6 +1163,7 @@ PRODUCT_PACKAGES += \
     mcDriverDaemon \
     mnld \
     mtk_agpsd \
+    mtk_lbs_service \
     muxreport \
     ntf-service \
     nvram_daemon \
@@ -1459,7 +1462,6 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libmmagent_so \
     vendor_lib64_libmml_so \
     vendor_lib64_libmmlpqImpl_so \
-    vendor_lib64_libmnl_so \
     vendor_lib64_libmorpho_RawDeepDenoise_so \
     vendor_lib64_libmtk_drvb_so \
     vendor_lib64_libmtkcam_atmseventmgr_so \
@@ -1618,8 +1620,4 @@ PRODUCT_PACKAGES += \
     vendor_lib64_sc202cssj_mipi_raw_tuning_so
 
 PRODUCT_BOOT_JARS += \
-    system_ext:mediatek-ims-base \
-    system_ext:mediatek-ims-common \
-    system_ext:mediatek-telecom-common \
-    system_ext:mediatek-telephony-base \
-    system_ext:mediatek-telephony-common
+    system_ext:mediatek-ims-base
