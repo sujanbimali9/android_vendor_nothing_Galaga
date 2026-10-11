@@ -7,6 +7,7 @@ soong_namespace {
         "device/nothing/Galaga",
         "hardware/mediatek",
         "hardware/mediatek/libion_mtk",
+        "hardware/mediatek/libmtkperf_client",
     ],
 }
 
@@ -27704,6 +27705,13 @@ install_symlink {
     soc_specific: true,
     installed_location: "bin/hw/camerahalserver",
     symlink_target: "/vendor/bin/hw/mt6878/camerahalserver",
+}
+
+install_symlink {
+    name: "vendor_lib64_sr_models_bin",
+    soc_specific: true,
+    installed_location: "lib64/sr_models.bin",
+    symlink_target: "/vendor/etc/camera/sr_models.bin",
 }
 
 install_symlink {

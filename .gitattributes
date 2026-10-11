@@ -4,3 +4,5 @@ proprietary/vendor/lib64/mt6878/libaibc_tuning.so filter=lfs diff=lfs merge=lfs 
 proprietary/vendor/lib64/libmvpu_clc_cl_compiler.so filter=lfs diff=lfs merge=lfs -text
 proprietary/vendor/lib64/sr_models.bin filter=lfs diff=lfs merge=lfs -text
 proprietary/system_ext/priv-app/NTCamera/NTCamera.apk filter=lfs diff=lfs merge=lfs -text
+proprietary/vendor/etc/camera/sr_models.so filter=lfs diff=lfs merge=lfs -text
+proprietary/vendor/etc/camera/sr_models.bin filter=lfs diff=lfs merge=lfs -text

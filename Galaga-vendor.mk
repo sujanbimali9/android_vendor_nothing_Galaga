@@ -450,6 +450,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Galaga/proprietary/vendor/etc/camera/siq_ocl_cache_rear_main:$(TARGET_COPY_OUT_VENDOR)/etc/camera/siq_ocl_cache_rear_main \
     vendor/nothing/Galaga/proprietary/vendor/etc/camera/siq_ocl_cache_rear_tele:$(TARGET_COPY_OUT_VENDOR)/etc/camera/siq_ocl_cache_rear_tele \
     vendor/nothing/Galaga/proprietary/vendor/etc/camera/siq_ocl_cache_rear_uw:$(TARGET_COPY_OUT_VENDOR)/etc/camera/siq_ocl_cache_rear_uw \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/sr_models.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sr_models.bin \
     vendor/nothing/Galaga/proprietary/vendor/etc/camera/sr_params.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sr_params.xml \
     vendor/nothing/Galaga/proprietary/vendor/etc/camera/superiq_model_front_main:$(TARGET_COPY_OUT_VENDOR)/etc/camera/superiq_model_front_main \
     vendor/nothing/Galaga/proprietary/vendor/etc/camera/superiq_model_rear_main:$(TARGET_COPY_OUT_VENDOR)/etc/camera/superiq_model_rear_main \
@@ -603,8 +604,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Galaga/proprietary/vendor/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_VENDOR)/firmware/tfa98xx.cnt \
     vendor/nothing/Galaga/proprietary/vendor/firmware/txpowerctrl.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/txpowerctrl.cfg \
     vendor/nothing/Galaga/proprietary/vendor/firmware/valhall-1691526.wa:$(TARGET_COPY_OUT_VENDOR)/firmware/valhall-1691526.wa \
-    vendor/nothing/Galaga/proprietary/vendor/firmware/wifi.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi.cfg \
-    vendor/nothing/Galaga/proprietary/vendor/lib64/sr_models.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/sr_models.bin
+    vendor/nothing/Galaga/proprietary/vendor/firmware/wifi.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi.cfg
 
 PRODUCT_PACKAGES += \
     libnelib \
@@ -1544,6 +1544,7 @@ PRODUCT_PACKAGES += \
     vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_aov_ISP_info_db \
     vendor_bin_hw_android_hardware_graphics_allocator-V2-service-mediatek \
     vendor_bin_hw_camerahalserver \
+    vendor_lib64_sr_models_bin \
     vendor_lib64_egl_libGLES_mali_so \
     vendor_lib64_hw_audio_primary_mt6878_so \
     vendor_lib64_hw_android_hardware_graphics_allocator-V2-mediatek_so \
