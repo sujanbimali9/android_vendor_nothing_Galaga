@@ -501,6 +501,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/fuelgauged_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_nvram_init.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/hw/init.mtkgki.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mtkgki.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/hw/init.sensor_2_0.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.sensor_2_0.rc \
+    vendor/nothing/Galaga/proprietary/vendor/etc/init/init.bip_ap.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bip_ap.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/init.bt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bt_drv.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/init.cccimdinit.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccimdinit.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/init.cccirpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccirpcd.rc \
@@ -529,7 +530,6 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/vendor.noth.hardware.sensor.sensor_extension-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.noth.hardware.sensor.sensor_extension-service.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/vendor.nothing.hardware.biometrics.fingerprint-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.nothing.hardware.biometrics.fingerprint-service.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/vendor.trustonic.tee@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee@1.1-service.rc \
-    vendor/nothing/Galaga/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/libese-tms.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libese-tms.conf \
     vendor/nothing/Galaga/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/nothing/Galaga/proprietary/vendor/etc/libnfc-tms.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-tms.conf \
@@ -806,8 +806,6 @@ PRODUCT_PACKAGES += \
     libics_haptic \
     libifcutils_mtk \
     libimagebuffer_wrapper \
-    libion_mtk \
-    libion_ulit \
     libjni_rater_api \
     libjpeg-alpha-oal_vendor \
     libjpeg-alpha_vendor \
@@ -898,8 +896,6 @@ PRODUCT_PACKAGES += \
     libpqxmlflagparser \
     libpqxmlparser \
     libratconfig \
-    librcs_interface \
-    librcs_volte_core \
     libremosaic_wrapper \
     libremosaiclib \
     librender_lib \
@@ -1350,7 +1346,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.camera.isphal-V1-ndk \
     vendor.mediatek.hardware.camera.postproc@1.0 \
     vendor.mediatek.hardware.camera.security@1.0 \
-    vendor.mediatek.hardware.clientapi-V1-ndk \
     vendor.mediatek.hardware.composer_ext-V1-ndk \
     vendor.mediatek.hardware.composer_ext@1.0 \
     vendor.mediatek.hardware.gnss-V1-ndk \
@@ -1387,8 +1382,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq_aidl-V2-ndk \
     vendor.mediatek.hardware.pq_aidl-V4-ndk \
     vendor.mediatek.hardware.pq_aidl-V7-ndk \
-    vendor.mediatek.hardware.rcs-V1-ndk \
-    vendor.mediatek.hardware.rcs@2.0 \
     vendor.mediatek.hardware.videotelephony-V1-ndk-vendor \
     vendor.noth.hardware.camera-V1-ndk \
     vendor.noth.hardware.camera-service-impl \
@@ -1451,6 +1444,7 @@ PRODUCT_PACKAGES += \
     vendor.noth.hardware.camera-service.xml \
     vendor.noth.hardware.sensor.sensor_extension-service.xml \
     vendor.nothing.hardware.biometrics.fingerprint-service.xml \
+    bip_ap \
     ccci_mdinit \
     ccci_rpcd \
     conninfra_loader \
@@ -1486,10 +1480,7 @@ PRODUCT_PACKAGES += \
     muxreport \
     ntf-service \
     nvram_daemon \
-    rcs_volte_stack \
     thermal_core \
-    volte_clientapi_ua \
-    volte_rcs_ua \
     vtservice
 
 PRODUCT_PACKAGES += \
