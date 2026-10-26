@@ -6,8 +6,16 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/nothing/Galaga
 
 PRODUCT_COPY_FILES += \
+    vendor/nothing/Galaga/proprietary/system/etc/morpho_image_refiner_tuning_params.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/morpho_image_refiner_tuning_params.xml \
+    vendor/nothing/Galaga/proprietary/system/etc/sysconfig/nothing-hiddenapi-package-allowlist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/nothing-hiddenapi-package-allowlist.xml \
     vendor/nothing/Galaga/proprietary/system_ext/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.vtservice.rc \
+    vendor/nothing/Galaga/proprietary/system_ext/etc/permissions/advancedSample_camera_extensions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/advancedSample_camera_extensions.xml \
     vendor/nothing/Galaga/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
+    vendor/nothing/Galaga/proprietary/system_ext/etc/permissions/com.nothing.feature.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.nothing.feature.xml \
+    vendor/nothing/Galaga/proprietary/system_ext/etc/permissions/gallery-google-lens-permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/gallery-google-lens-permissions.xml \
+    vendor/nothing/Galaga/proprietary/system_ext/etc/permissions/google-lens-permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/google-lens-permissions.xml \
+    vendor/nothing/Galaga/proprietary/system_ext/etc/permissions/privapp-permissions-NTCamera.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-NTCamera.xml \
+    vendor/nothing/Galaga/proprietary/system_ext/etc/permissions/privapp-permissions-NothingExperience.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-NothingExperience.xml \
     vendor/nothing/Galaga/proprietary/system_ext/etc/sysconfig/com.mediatek.ims.config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/com.mediatek.ims.config.xml \
     vendor/nothing/Galaga/proprietary/vendor/app/mcRegistry/020f0000000000000000000000000000.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020f0000000000000000000000000000.drbin \
     vendor/nothing/Galaga/proprietary/vendor/app/mcRegistry/020f0000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020f0000000000000000000000000000.tlbin \
@@ -36,60 +44,60 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Galaga/proprietary/vendor/app/mcRegistry/5020170115e016302017012521300000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/5020170115e016302017012521300000.tlbin \
     vendor/nothing/Galaga/proprietary/vendor/app/mcRegistry/abcd270ea5c44c58bcd3384a2fa2539e.tabin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/abcd270ea5c44c58bcd3384a2fa2539e.tabin \
     vendor/nothing/Galaga/proprietary/vendor/app/mcRegistry/e97c270ea5c44c58bcd3384a2fa2539e.tabin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/e97c270ea5c44c58bcd3384a2fa2539e.tabin \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/ae/mt6878/ParameterDB_ae.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/ae/mt6878/ParameterDB_ae.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/af/mt6878/ParameterDB_af.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/af/mt6878/ParameterDB_af.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/awb/mt6878/ParameterDB_awb.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/awb/mt6878/ParameterDB_awb.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/awbsync/mt6878/ParameterDB_awbsync.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/awbsync/mt6878/ParameterDB_awbsync.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/feature/mt6878/ParameterDB_feature.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/feature/mt6878/ParameterDB_feature.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/flash/mt6878/ParameterDB_flash.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/flash/mt6878/ParameterDB_flash.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/flashcali/mt6878/ParameterDB_flashcali.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/flashcali/mt6878/ParameterDB_flashcali.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/mt6878/ParameterDB.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/mt6878/ParameterDB.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/mt6878/sw_top_control_data.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/mt6878/sw_top_control_data.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/mt6878/top_control_data.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/mt6878/top_control_data.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/pd/mt6878/ParameterDB_pd.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/pd/mt6878/ParameterDB_pd.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/pipeline/mt6878/ParameterDB_pipeline.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/pipeline/mt6878/ParameterDB_pipeline.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/ParameterDB.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/ParameterDB.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/ae/ParameterDB_ae.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/ae/ParameterDB_ae.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/af/ParameterDB_af.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/af/ParameterDB_af.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/awb/ParameterDB_awb.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/awb/ParameterDB_awb.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/awbsync/ParameterDB_awbsync.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/awbsync/ParameterDB_awbsync.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/feature/ParameterDB_feature.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/feature/ParameterDB_feature.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/flash/ParameterDB_flash.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/flash/ParameterDB_flash.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/flashcali/ParameterDB_flashcali.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/flashcali/ParameterDB_flashcali.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/pd/ParameterDB_pd.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/pd/ParameterDB_pd.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/pipeline/ParameterDB_pipeline.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/pipeline/ParameterDB_pipeline.db \
     vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/port_select.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/port_select.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tone/mt6878/ParameterDB_tone.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tone/mt6878/ParameterDB_tone.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/default_sensor/mt6878/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/default_sensor/mt6878/ISP_mapping.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/default_sensor/mt6878/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/default_sensor/mt6878/ISP_param.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc02m1_mipi_raw/mt6878/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc02m1_mipi_raw/mt6878/ISP_mapping.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc02m1_mipi_raw/mt6878/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc02m1_mipi_raw/mt6878/ISP_param.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc08a8_mipi_raw/mt6878/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc08a8_mipi_raw/mt6878/ISP_mapping.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc08a8_mipi_raw/mt6878/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc08a8_mipi_raw/mt6878/ISP_param.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc08a8syx_mipi_raw/mt6878/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc08a8syx_mipi_raw/mt6878/ISP_mapping.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc08a8syx_mipi_raw/mt6878/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc08a8syx_mipi_raw/mt6878/ISP_param.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc08a8xl_mipi_raw/mt6878/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc08a8xl_mipi_raw/mt6878/ISP_mapping.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc08a8xl_mipi_raw/mt6878/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc08a8xl_mipi_raw/mt6878/ISP_param.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc16b3c2_mipi_raw/mt6878/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc16b3c2_mipi_raw/mt6878/ISP_mapping.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc16b3c2_mipi_raw/mt6878/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc16b3c2_mipi_raw/mt6878/ISP_param.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc16b3c_mipi_raw/mt6878/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc16b3c_mipi_raw/mt6878/ISP_mapping.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc16b3c_mipi_raw/mt6878/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc16b3c_mipi_raw/mt6878/ISP_param.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc16b3cofilm_mipi_raw/mt6878/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc16b3cofilm_mipi_raw/mt6878/ISP_mapping.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc16b3cofilm_mipi_raw/mt6878/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc16b3cofilm_mipi_raw/mt6878/ISP_param.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc16b3ctxd_mipi_raw/mt6878/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc16b3ctxd_mipi_raw/mt6878/ISP_mapping.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc16b3ctxd_mipi_raw/mt6878/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc16b3ctxd_mipi_raw/mt6878/ISP_param.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc16b3cxl_mipi_raw/mt6878/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc16b3cxl_mipi_raw/mt6878/ISP_mapping.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc16b3cxl_mipi_raw/mt6878/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc16b3cxl_mipi_raw/mt6878/ISP_param.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx882_mipi_raw/mt6878/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx882_mipi_raw/mt6878/ISP_mapping.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx882_mipi_raw/mt6878/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx882_mipi_raw/mt6878/ISP_param.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx882txd_mipi_raw/mt6878/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx882txd_mipi_raw/mt6878/ISP_mapping.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx882txd_mipi_raw/mt6878/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx882txd_mipi_raw/mt6878/ISP_param.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mt6878/ISP_info.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mt6878/ISP_info.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/ov50d40_mipi_raw/mt6878/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/ov50d40_mipi_raw/mt6878/ISP_mapping.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/ov50d40_mipi_raw/mt6878/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/ov50d40_mipi_raw/mt6878/ISP_param.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/ov50d40ofilm_mipi_raw/mt6878/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/ov50d40ofilm_mipi_raw/mt6878/ISP_mapping.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/ov50d40ofilm_mipi_raw/mt6878/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/ov50d40ofilm_mipi_raw/mt6878/ISP_param.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5kgn9sp_mipi_raw/mt6878/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5kgn9sp_mipi_raw/mt6878/ISP_mapping.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5kgn9sp_mipi_raw/mt6878/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5kgn9sp_mipi_raw/mt6878/ISP_param.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5kgn9spofxian_mipi_raw/mt6878/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5kgn9spofxian_mipi_raw/mt6878/ISP_mapping.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5kgn9spofxian_mipi_raw/mt6878/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5kgn9spofxian_mipi_raw/mt6878/ISP_param.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/sc202cs_mipi_raw/mt6878/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/sc202cs_mipi_raw/mt6878/ISP_mapping.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/sc202cs_mipi_raw/mt6878/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/sc202cs_mipi_raw/mt6878/ISP_param.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/sc202cssj_mipi_raw/mt6878/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/sc202cssj_mipi_raw/mt6878/ISP_mapping.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/sc202cssj_mipi_raw/mt6878/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/sc202cssj_mipi_raw/mt6878/ISP_param.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/default_sensor/mt6878/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/default_sensor/mt6878/ISP_mapping.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/default_sensor/mt6878/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/default_sensor/mt6878/ISP_param.db \
-    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/mt6878/ISP_info.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/mt6878/ISP_info.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/sw_top_control_data.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/sw_top_control_data.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tone/ParameterDB_tone.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tone/ParameterDB_tone.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/top_control_data.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/top_control_data.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/ISP_info.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/ISP_info.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/default_sensor/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/default_sensor/ISP_mapping.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/default_sensor/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/default_sensor/ISP_param.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc02m1_mipi_raw/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc02m1_mipi_raw/ISP_mapping.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc02m1_mipi_raw/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc02m1_mipi_raw/ISP_param.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc08a8_mipi_raw/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc08a8_mipi_raw/ISP_mapping.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc08a8_mipi_raw/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc08a8_mipi_raw/ISP_param.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc08a8syx_mipi_raw/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc08a8syx_mipi_raw/ISP_mapping.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc08a8syx_mipi_raw/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc08a8syx_mipi_raw/ISP_param.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc08a8xl_mipi_raw/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc08a8xl_mipi_raw/ISP_mapping.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc08a8xl_mipi_raw/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc08a8xl_mipi_raw/ISP_param.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc16b3c2_mipi_raw/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc16b3c2_mipi_raw/ISP_mapping.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc16b3c2_mipi_raw/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc16b3c2_mipi_raw/ISP_param.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc16b3c_mipi_raw/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc16b3c_mipi_raw/ISP_mapping.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc16b3c_mipi_raw/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc16b3c_mipi_raw/ISP_param.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc16b3cofilm_mipi_raw/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc16b3cofilm_mipi_raw/ISP_mapping.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc16b3cofilm_mipi_raw/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc16b3cofilm_mipi_raw/ISP_param.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc16b3ctxd_mipi_raw/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc16b3ctxd_mipi_raw/ISP_mapping.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc16b3ctxd_mipi_raw/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc16b3ctxd_mipi_raw/ISP_param.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc16b3cxl_mipi_raw/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc16b3cxl_mipi_raw/ISP_mapping.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc16b3cxl_mipi_raw/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/gc16b3cxl_mipi_raw/ISP_param.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx882_mipi_raw/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx882_mipi_raw/ISP_mapping.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx882_mipi_raw/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx882_mipi_raw/ISP_param.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx882txd_mipi_raw/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx882txd_mipi_raw/ISP_mapping.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx882txd_mipi_raw/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/imx882txd_mipi_raw/ISP_param.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/ov50d40_mipi_raw/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/ov50d40_mipi_raw/ISP_mapping.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/ov50d40_mipi_raw/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/ov50d40_mipi_raw/ISP_param.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/ov50d40ofilm_mipi_raw/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/ov50d40ofilm_mipi_raw/ISP_mapping.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/ov50d40ofilm_mipi_raw/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/ov50d40ofilm_mipi_raw/ISP_param.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5kgn9sp_mipi_raw/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5kgn9sp_mipi_raw/ISP_mapping.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5kgn9sp_mipi_raw/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5kgn9sp_mipi_raw/ISP_param.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5kgn9spofxian_mipi_raw/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5kgn9spofxian_mipi_raw/ISP_mapping.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5kgn9spofxian_mipi_raw/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/s5kgn9spofxian_mipi_raw/ISP_param.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/sc202cs_mipi_raw/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/sc202cs_mipi_raw/ISP_mapping.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/sc202cs_mipi_raw/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/sc202cs_mipi_raw/ISP_param.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/sc202cssj_mipi_raw/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/sc202cssj_mipi_raw/ISP_mapping.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/sc202cssj_mipi_raw/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/sc202cssj_mipi_raw/ISP_param.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/ISP_info.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/ISP_info.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/default_sensor/ISP_mapping.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/default_sensor/ISP_mapping.db \
+    vendor/nothing/Galaga/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/default_sensor/ISP_param.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/default_sensor/ISP_param.db \
     vendor/nothing/Galaga/proprietary/vendor/etc/AudioLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/AudioLog_dynamic.xml \
     vendor/nothing/Galaga/proprietary/vendor/etc/MNL_Config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/MNL_Config.xml \
     vendor/nothing/Galaga/proprietary/vendor/etc/SEC_THN31_FW_VTP.txt.bin:$(TARGET_COPY_OUT_VENDOR)/etc/SEC_THN31_FW_VTP.txt.bin \
@@ -222,29 +230,231 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Galaga/proprietary/vendor/etc/aurisys_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/aurisys_config.xml \
     vendor/nothing/Galaga/proprietary/vendor/etc/aurisys_config_rv.xml:$(TARGET_COPY_OUT_VENDOR)/etc/aurisys_config_rv.xml \
     vendor/nothing/Galaga/proprietary/vendor/etc/bh3.dla:$(TARGET_COPY_OUT_VENDOR)/etc/bh3.dla \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/AI_Seg_v0.2.29.1_nothing.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/AI_Seg_v0.2.29.1_nothing.bin \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/Algomark/AJensonPro-Semibold.otf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/Algomark/AJensonPro-Semibold.otf \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/Arabicfont/NotoNaskhArabic.ttf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/Arabicfont/NotoNaskhArabic.ttf \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/CFR_para4_Nothing_23111_UW_v8200-4.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CFR_para4_Nothing_23111_UW_v8200-4.bin \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/CFR_para4_Nothing_23111_W_v8210-1.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CFR_para4_Nothing_23111_W_v8210-1.bin \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/CFR_para4_Nothing_23114_W_v8220.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CFR_para4_Nothing_23114_W_v8220.bin \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/M_Rater_Defect_v1.0.14_arm64_ppl3.model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/M_Rater_Defect_v1.0.14_arm64_ppl3.model \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/Ndotfont/Ndot-55.otf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/Ndotfont/Ndot-55.otf \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/Robotofont/Roboto-55.ttf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/Robotofont/Roboto-55.ttf \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/SansCJKfont/NotoSansCJK.ttc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/SansCJKfont/NotoSansCJK.ttc \
     vendor/nothing/Galaga/proprietary/vendor/etc/camera/Vega_Align_occlusion_106_13.17.12_fp16_arm64.model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/Vega_Align_occlusion_106_13.17.12_fp16_arm64.model \
     vendor/nothing/Galaga/proprietary/vendor/etc/camera/Vega_Align_occlusion_106_13.17.79_fp16_arm64.model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/Vega_Align_occlusion_106_13.17.79_fp16_arm64.model \
     vendor/nothing/Galaga/proprietary/vendor/etc/camera/Vega_Detect_CommonFace_Gray_4.13.2_fp16_arm64.model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/Vega_Detect_CommonFace_Gray_4.13.2_fp16_arm64.model \
     vendor/nothing/Galaga/proprietary/vendor/etc/camera/Vega_Detect_CommonFace_Gray_keep_fix_1.3.0_fp16_arm64.model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/Vega_Detect_CommonFace_Gray_keep_fix_1.3.0_fp16_arm64.model \
     vendor/nothing/Galaga/proprietary/vendor/etc/camera/Vega_Track_FaceRect20cls_1.5.0_fp16_arm64.model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/Vega_Track_FaceRect20cls_1.5.0_fp16_arm64.model \
     vendor/nothing/Galaga/proprietary/vendor/etc/camera/Vega_Track_FaceRect20cls_2.2.0_fp16_arm64.model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/Vega_Track_FaceRect20cls_2.2.0_fp16_arm64.model \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/ai_scene_model.model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ai_scene_model.model \
     vendor/nothing/Galaga/proprietary/vendor/etc/camera/algo_policy.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/algo_policy.bin \
     vendor/nothing/Galaga/proprietary/vendor/etc/camera/anc/sat_mecp.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/anc/sat_mecp.bin \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/anc_detect_model.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/anc_detect_model.bin \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/anc_fullhdr_algo_cache:$(TARGET_COPY_OUT_VENDOR)/etc/camera/anc_fullhdr_algo_cache \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/anc_fullhdr_binary_cache:$(TARGET_COPY_OUT_VENDOR)/etc/camera/anc_fullhdr_binary_cache \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/anc_fullhdr_model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/anc_fullhdr_model \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/anc_object_detection_cl_v1.0.0.mdl:$(TARGET_COPY_OUT_VENDOR)/etc/camera/anc_object_detection_cl_v1.0.0.mdl \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/anc_supermoon_params.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/anc_supermoon_params.json \
     vendor/nothing/Galaga/proprietary/vendor/etc/camera/anc_yuv_svq/supervq_model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/anc_yuv_svq/supervq_model \
     vendor/nothing/Galaga/proprietary/vendor/etc/camera/anc_yuv_svq/svq_cache:$(TARGET_COPY_OUT_VENDOR)/etc/camera/anc_yuv_svq/svq_cache \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/aifeiertieta/config.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/aifeiertieta/config.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/aifeiertieta/content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/aifeiertieta/content.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/aifeiertieta/effect.mk:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/aifeiertieta/effect.mk \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/aifeiertieta/effect_content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/aifeiertieta/effect_content.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/aifeiertieta/filter.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/aifeiertieta/filter.png \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/aifeiertieta/filter_effect3.fs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/aifeiertieta/filter_effect3.fs \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/aifeiertieta/filter_effect3.vs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/aifeiertieta/filter_effect3.vs \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/aifeiertieta/icon.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/aifeiertieta/icon.png \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/aifeiertieta/params.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/aifeiertieta/params.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/boli/content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/boli/content.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/boli/effect_content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/boli/effect_content.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/boli/hsl.vert:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/boli/hsl.vert \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/boli/len.frag:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/boli/len.frag \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/boli/params.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/boli/params.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/feilin/config.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/feilin/config.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/feilin/content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/feilin/content.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/feilin/effect.mk:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/feilin/effect.mk \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/feilin/effect_content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/feilin/effect_content.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/feilin/filter.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/feilin/filter.png \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/feilin/filter_effect3.fs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/feilin/filter_effect3.fs \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/feilin/filter_effect3.vs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/feilin/filter_effect3.vs \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/feilin/icon.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/feilin/icon.png \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/feilin/params.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/feilin/params.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/feilinheibai/config.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/feilinheibai/config.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/feilinheibai/content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/feilinheibai/content.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/feilinheibai/effect.mk:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/feilinheibai/effect.mk \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/feilinheibai/effect_content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/feilinheibai/effect_content.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/feilinheibai/filter.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/feilinheibai/filter.png \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/feilinheibai/filter_effect3.fs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/feilinheibai/filter_effect3.fs \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/feilinheibai/filter_effect3.vs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/feilinheibai/filter_effect3.vs \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/feilinheibai/icon.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/feilinheibai/icon.png \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/feilinheibai/params.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/feilinheibai/params.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/fupian/config.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/fupian/config.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/fupian/content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/fupian/content.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/fupian/effect.mk:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/fupian/effect.mk \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/fupian/effect_content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/fupian/effect_content.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/fupian/filter.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/fupian/filter.png \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/fupian/filter_effect3.fs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/fupian/filter_effect3.fs \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/fupian/filter_effect3.vs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/fupian/filter_effect3.vs \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/fupian/icon.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/fupian/icon.png \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/fupian/params.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/fupian/params.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/fupianV2/config.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/fupianV2/config.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/fupianV2/content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/fupianV2/content.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/fupianV2/effect.mk:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/fupianV2/effect.mk \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/fupianV2/effect_content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/fupianV2/effect_content.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/fupianV2/filter.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/fupianV2/filter.png \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/fupianV2/filter_effect3.fs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/fupianV2/filter_effect3.fs \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/fupianV2/filter_effect3.vs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/fupianV2/filter_effect3.vs \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/fupianV2/icon.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/fupianV2/icon.png \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/fupianV2/params.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/fupianV2/params.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/heibaidianying/config.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/heibaidianying/config.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/heibaidianying/content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/heibaidianying/content.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/heibaidianying/effect.mk:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/heibaidianying/effect.mk \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/heibaidianying/effect_content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/heibaidianying/effect_content.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/heibaidianying/filter.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/heibaidianying/filter.png \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/heibaidianying/filter_effect3.fs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/heibaidianying/filter_effect3.fs \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/heibaidianying/filter_effect3.vs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/heibaidianying/filter_effect3.vs \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/heibaidianying/icon.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/heibaidianying/icon.png \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/heibaidianying/params.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/heibaidianying/params.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/lengdiao/config.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/lengdiao/config.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/lengdiao/content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/lengdiao/content.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/lengdiao/effect.mk:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/lengdiao/effect.mk \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/lengdiao/effect_content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/lengdiao/effect_content.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/lengdiao/filter.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/lengdiao/filter.png \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/lengdiao/filter_effect3.fs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/lengdiao/filter_effect3.fs \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/lengdiao/filter_effect3.vs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/lengdiao/filter_effect3.vs \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/lengdiao/icon.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/lengdiao/icon.png \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/lengdiao/params.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/lengdiao/params.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/meishi/config.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/meishi/config.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/meishi/content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/meishi/content.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/meishi/effect.mk:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/meishi/effect.mk \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/meishi/effect_content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/meishi/effect_content.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/meishi/filter.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/meishi/filter.png \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/meishi/filter_effect3.fs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/meishi/filter_effect3.fs \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/meishi/filter_effect3.vs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/meishi/filter_effect3.vs \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/meishi/icon.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/meishi/icon.png \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/meishi/params.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/meishi/params.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/nuandiao/config.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/nuandiao/config.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/nuandiao/content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/nuandiao/content.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/nuandiao/effect.mk:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/nuandiao/effect.mk \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/nuandiao/effect_content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/nuandiao/effect_content.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/nuandiao/filter.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/nuandiao/filter.png \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/nuandiao/filter_effect3.fs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/nuandiao/filter_effect3.fs \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/nuandiao/filter_effect3.vs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/nuandiao/filter_effect3.vs \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/nuandiao/icon.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/nuandiao/icon.png \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/nuandiao/params.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/nuandiao/params.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/stretch/config.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/stretch/config.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/stretch/content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/stretch/content.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/stretch/effect.mk:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/stretch/effect.mk \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/stretch/effect_content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/stretch/effect_content.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/stretch/filter.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/stretch/filter.png \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/stretch/filter_effect3.fs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/stretch/filter_effect3.fs \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/stretch/filter_effect3.vs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/stretch/filter_effect3.vs \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/stretch/params.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/stretch/params.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/yinyan/config.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/yinyan/config.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/yinyan/content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/yinyan/content.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/yinyan/effect.mk:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/yinyan/effect.mk \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/yinyan/effect_content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/yinyan/effect_content.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/yinyan/filter.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/yinyan/filter.png \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/yinyan/filter_effect3.fs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/yinyan/filter_effect3.fs \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/yinyan/filter_effect3.vs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/yinyan/filter_effect3.vs \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/yinyan/icon.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/yinyan/icon.png \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/yinyan/params.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/yinyan/params.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/zhengpian/config.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/zhengpian/config.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/zhengpian/content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/zhengpian/content.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/zhengpian/effect.mk:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/zhengpian/effect.mk \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/zhengpian/effect_content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/zhengpian/effect_content.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/zhengpian/filter.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/zhengpian/filter.png \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/zhengpian/filter_effect3.fs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/zhengpian/filter_effect3.fs \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/zhengpian/filter_effect3.vs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/zhengpian/filter_effect3.vs \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/zhengpian/icon.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/zhengpian/icon.png \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/zhengpian/params.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/zhengpian/params.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/zhigan/config.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/zhigan/config.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/zhigan/content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/zhigan/content.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/zhigan/effect.mk:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/zhigan/effect.mk \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/zhigan/effect_content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/zhigan/effect_content.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/zhigan/filter.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/zhigan/filter.png \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/zhigan/filter_effect3.fs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/zhigan/filter_effect3.fs \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/zhigan/filter_effect3.vs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/zhigan/filter_effect3.vs \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/zhigan/icon.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/zhigan/icon.png \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/zhigan/params.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/zhigan/params.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/ziran/config.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/ziran/config.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/ziran/content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/ziran/content.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/ziran/effect.mk:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/ziran/effect.mk \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/ziran/effect_content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/ziran/effect_content.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/ziran/filter.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/ziran/filter.png \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/ziran/filter_effect3.fs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/ziran/filter_effect3.fs \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/ziran/filter_effect3.vs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/ziran/filter_effect3.vs \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/ziran/icon.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/ziran/icon.png \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/assets/ziran/params.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/assets/ziran/params.json \
     vendor/nothing/Galaga/proprietary/vendor/etc/camera/binary_cache:$(TARGET_COPY_OUT_VENDOR)/etc/camera/binary_cache \
     vendor/nothing/Galaga/proprietary/vendor/etc/camera/bokeh_caldata_uw_golden.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/bokeh_caldata_uw_golden.bin \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/cache_front_main:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cache_front_main \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/cache_rear_main:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cache_rear_main \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/cache_rear_tele:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cache_rear_tele \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/cache_rear_uw:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cache_rear_uw \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/capture_cache:$(TARGET_COPY_OUT_VENDOR)/etc/camera/capture_cache \
     vendor/nothing/Galaga/proprietary/vendor/etc/camera/capture_model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/capture_model \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/capture_policy:$(TARGET_COPY_OUT_VENDOR)/etc/camera/capture_policy \
     vendor/nothing/Galaga/proprietary/vendor/etc/camera/config.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/config.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/dense_model.pack:$(TARGET_COPY_OUT_VENDOR)/etc/camera/dense_model.pack \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/detect_model.pack:$(TARGET_COPY_OUT_VENDOR)/etc/camera/detect_model.pack \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/dgain_mask_front_main.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/dgain_mask_front_main.bin \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/dgain_mask_rear_main.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/dgain_mask_rear_main.bin \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/dgain_mask_rear_tele.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/dgain_mask_rear_tele.bin \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/dgain_mask_rear_uw.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/dgain_mask_rear_uw.bin \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/dof_dep_cache:$(TARGET_COPY_OUT_VENDOR)/etc/camera/dof_dep_cache \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/dof_dep_model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/dof_dep_model \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/dof_dep_policy:$(TARGET_COPY_OUT_VENDOR)/etc/camera/dof_dep_policy \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/dof_mecp.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/dof_mecp.bin \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/dof_seg_cache:$(TARGET_COPY_OUT_VENDOR)/etc/camera/dof_seg_cache \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/dof_seg_model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/dof_seg_model \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/dof_seg_policy:$(TARGET_COPY_OUT_VENDOR)/etc/camera/dof_seg_policy \
     vendor/nothing/Galaga/proprietary/vendor/etc/camera/dualcam_cali_golden_T_W_1.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/dualcam_cali_golden_T_W_1.bin \
     vendor/nothing/Galaga/proprietary/vendor/etc/camera/dualcam_cali_golden_W_UW_1.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/dualcam_cali_golden_W_UW_1.bin \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/effect_param_front_main.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/effect_param_front_main.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/effect_param_rear_main.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/effect_param_rear_main.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/effect_param_rear_tele.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/effect_param_rear_tele.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/effect_param_rear_uw.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/effect_param_rear_uw.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/facesr.sensetime.model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/facesr.sensetime.model \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/hc_opr_lite_cache:$(TARGET_COPY_OUT_VENDOR)/etc/camera/hc_opr_lite_cache \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/hc_opr_lite_cache_front_main:$(TARGET_COPY_OUT_VENDOR)/etc/camera/hc_opr_lite_cache_front_main \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/hc_opr_lite_cache_rear_main:$(TARGET_COPY_OUT_VENDOR)/etc/camera/hc_opr_lite_cache_rear_main \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/hc_opr_lite_cache_rear_tele:$(TARGET_COPY_OUT_VENDOR)/etc/camera/hc_opr_lite_cache_rear_tele \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/hc_opr_lite_cache_rear_uw:$(TARGET_COPY_OUT_VENDOR)/etc/camera/hc_opr_lite_cache_rear_uw \
     vendor/nothing/Galaga/proprietary/vendor/etc/camera/ldc_cap_cache:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ldc_cap_cache \
     vendor/nothing/Galaga/proprietary/vendor/etc/camera/ldc_cap_model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ldc_cap_model \
     vendor/nothing/Galaga/proprietary/vendor/etc/camera/ldc_cap_policy:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ldc_cap_policy \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/morphoEISCalibration.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morphoEISCalibration.bin \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/morpho_eis_cfg.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_eis_cfg.json \
     vendor/nothing/Galaga/proprietary/vendor/etc/camera/morpho_raw_deep_denoise_model.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_raw_deep_denoise_model.bin \
     vendor/nothing/Galaga/proprietary/vendor/etc/camera/morpho_raw_deep_denoise_tuning_params.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/morpho_raw_deep_denoise_tuning_params.xml \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/nothing_node.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/nothing_node.bin \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/nothing_noise_stat.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/nothing_noise_stat.bin \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/nothing_pipeline.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/nothing_pipeline.bin \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/ntcamoverridesettings.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ntcamoverridesettings.txt \
     vendor/nothing/Galaga/proprietary/vendor/etc/camera/param.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/param.bin \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/preview_cache:$(TARGET_COPY_OUT_VENDOR)/etc/camera/preview_cache \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/preview_model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/preview_model \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/preview_policy:$(TARGET_COPY_OUT_VENDOR)/etc/camera/preview_policy \
     vendor/nothing/Galaga/proprietary/vendor/etc/camera/remosaic/GN9_HC_DL_4921603794670873694.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/remosaic/GN9_HC_DL_4921603794670873694.bin \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/sdk_params_back.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sdk_params_back.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/sdk_params_front.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sdk_params_front.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/sdk_params_front_bokeh.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sdk_params_front_bokeh.json \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/sg_cap_cache:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sg_cap_cache \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/sg_cap_model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sg_cap_model \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/sg_cap_policy:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sg_cap_policy \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/sg_pre_model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sg_pre_model \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/singlebokeh_mecp.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/singlebokeh_mecp.bin \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/siq_ocl_cache_front_main:$(TARGET_COPY_OUT_VENDOR)/etc/camera/siq_ocl_cache_front_main \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/siq_ocl_cache_rear_main:$(TARGET_COPY_OUT_VENDOR)/etc/camera/siq_ocl_cache_rear_main \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/siq_ocl_cache_rear_tele:$(TARGET_COPY_OUT_VENDOR)/etc/camera/siq_ocl_cache_rear_tele \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/siq_ocl_cache_rear_uw:$(TARGET_COPY_OUT_VENDOR)/etc/camera/siq_ocl_cache_rear_uw \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/sr_params.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sr_params.xml \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/superiq_model_front_main:$(TARGET_COPY_OUT_VENDOR)/etc/camera/superiq_model_front_main \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/superiq_model_rear_main:$(TARGET_COPY_OUT_VENDOR)/etc/camera/superiq_model_rear_main \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/superiq_model_rear_tele:$(TARGET_COPY_OUT_VENDOR)/etc/camera/superiq_model_rear_tele \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/superiq_model_rear_uw:$(TARGET_COPY_OUT_VENDOR)/etc/camera/superiq_model_rear_uw \
     vendor/nothing/Galaga/proprietary/vendor/etc/camera/vidhance.lic:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vidhance.lic \
     vendor/nothing/Galaga/proprietary/vendor/etc/camera/vidhance_calibration:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vidhance_calibration \
     vendor/nothing/Galaga/proprietary/vendor/etc/cust_color.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cust_color.xml \
@@ -279,6 +489,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Galaga/proprietary/vendor/etc/init.insmod.mt6878.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.mt6878.cfg \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/android.hardware.gatekeeper-service.trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper-service.trustonic.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/android.hardware.gnss-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-service.mediatek.rc \
+    vendor/nothing/Galaga/proprietary/vendor/etc/init/android.hardware.graphics.allocator-V2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator-V2-service-mediatek.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/android.hardware.graphics.composer@3.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.composer@3.2-service.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/android.hardware.media.c2@1.2-mediatek-64b.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2@1.2-mediatek-64b.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc \
@@ -293,6 +504,8 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/init.bt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bt_drv.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/init.cccimdinit.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccimdinit.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/init.cccirpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccirpcd.rc \
+    vendor/nothing/Galaga/proprietary/vendor/etc/init/init.gps_pwr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps_pwr.rc \
+    vendor/nothing/Galaga/proprietary/vendor/etc/init/init.gps_scp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps_scp.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/init.ntf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.ntf.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/init.thermal_core.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermal_core.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/init.touch.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.touch.rc \
@@ -300,6 +513,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/init.wlan_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wlan_drv.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/mtk_agpsd_p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_agpsd_p.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/mtk_gnss.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_gnss.rc \
+    vendor/nothing/Galaga/proprietary/vendor/etc/init/mtk_lbs_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_lbs_service.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/mtkrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtkrild.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/muxreport.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/muxreport.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/nfc-service-tms.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nfc-service-tms.rc \
@@ -311,6 +525,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/vendor.mediatek.hardware.nvram-sevice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nvram-sevice.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/vendor.noth.fingerprint.goodix.config.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.noth.fingerprint.goodix.config.rc \
+    vendor/nothing/Galaga/proprietary/vendor/etc/init/vendor.noth.hardware.camera-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.noth.hardware.camera-service.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/vendor.noth.hardware.sensor.sensor_extension-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.noth.hardware.sensor.sensor_extension-service.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/vendor.nothing.hardware.biometrics.fingerprint-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.nothing.hardware.biometrics.fingerprint-service.rc \
     vendor/nothing/Galaga/proprietary/vendor/etc/init/vendor.trustonic.tee@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee@1.1-service.rc \
@@ -391,25 +606,70 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Galaga/proprietary/vendor/firmware/wifi.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi.cfg
 
 PRODUCT_PACKAGES += \
+    libnelib \
     7816-3-T1 \
     APUWareApusysAidlServer \
     APUWareUtilsAidlServer \
+    arm.graphics-V4-ndk \
+    arm.mali.platform-V2-ndk \
+    com.nothing.node.b2j \
+    com.nothing.node.b2y \
+    com.nothing.node.beauty \
+    com.nothing.node.bokehdepthjiigan \
+    com.nothing.node.bokehhdr \
+    com.nothing.node.cfr \
+    com.nothing.node.darkvision \
+    com.nothing.node.dmp \
+    com.nothing.node.filter \
+    com.nothing.node.frt \
+    com.nothing.node.jpeg \
+    com.nothing.node.jpegr \
+    com.nothing.node.ldc \
+    com.nothing.node.memcpy \
+    com.nothing.node.mmf \
+    com.nothing.node.p2y \
+    com.nothing.node.portrait \
+    com.nothing.node.rawhdr \
+    com.nothing.node.singlebokeh \
+    com.nothing.node.supermoon \
+    com.nothing.node.supernight \
+    com.nothing.node.superportraitnight \
+    com.nothing.node.watermark \
+    com.nothing.node.y2y \
+    com.nothing.node.yuvhdr \
+    com.nothing.node.yuvsr \
+    libGLES_mali \
     libGLES_meow \
     libMEOW_data \
     libMEOW_gift \
     libMEOW_qt \
     libMEOW_trace \
-    libGLES_mali \
+    gc02m1_mipi_raw_IdxMgr \
+    gc02m1_mipi_raw_tuning \
+    gc08a8_mipi_raw_IdxMgr \
+    gc08a8_mipi_raw_tuning \
+    gc08a8syx_mipi_raw_IdxMgr \
+    gc08a8syx_mipi_raw_tuning \
+    gc08a8xl_mipi_raw_IdxMgr \
+    gc08a8xl_mipi_raw_tuning \
+    gc16b3c2_mipi_raw_IdxMgr \
+    gc16b3c2_mipi_raw_tuning \
+    gc16b3c_mipi_raw_IdxMgr \
+    gc16b3c_mipi_raw_tuning \
+    gc16b3cofilm_mipi_raw_IdxMgr \
+    gc16b3cofilm_mipi_raw_tuning \
+    gc16b3ctxd_mipi_raw_IdxMgr \
+    gc16b3ctxd_mipi_raw_tuning \
+    gc16b3cxl_mipi_raw_IdxMgr \
+    gc16b3cxl_mipi_raw_tuning \
     android.hardware.gnss-impl-mediatek \
+    android.hardware.graphics.allocator-V2-mediatek \
+    android.hardware.graphics.mapper@4.0-impl-mediatek \
     audio.primary.mediatek \
     fingerprint.default \
     gps.default \
     hwcomposer.mtk_common \
-    android.hardware.graphics.allocator-V2-mediatek \
-    android.hardware.graphics.mapper@4.0-impl-mediatek \
     mapper.mediatek \
-    vendor.mediatek.hardware.pq_aidl-impl \
-    vulkan.mali \
     mtkflp.default \
     mtkgeofence.default \
     sensors.mediatek.V2.0 \
@@ -420,33 +680,133 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.gnss-impl \
     vendor.mediatek.hardware.gnss.batching-impl \
     vendor.mediatek.hardware.nvram-impl \
+    vendor.mediatek.hardware.pq_aidl-impl \
     vendor.mediatek.hardware.videotelephony-impl \
+    vulkan.mali \
+    imx882_mipi_raw_IdxMgr \
+    imx882_mipi_raw_tuning \
+    imx882txd_mipi_raw_IdxMgr \
+    imx882txd_mipi_raw_tuning \
     lib3a.ae.pipe \
+    lib3a.ae \
+    lib3a.ae.stat \
+    lib3a.af.assist.models1d \
+    lib3a.af.assist.models2d \
+    lib3a.af.assist \
+    lib3a.af.assist.utils \
+    lib3a.af.core \
+    lib3a.af \
+    lib3a.aishutter \
+    lib3a.alsflicker \
+    lib3a.awb.core \
+    lib3a.awbsync \
+    lib3a.cculog \
+    lib3a.custom.ae.flow \
+    lib3a.custom.ae \
+    lib3a.custom.af.flow \
+    lib3a.custom.awb.flow \
     lib3a.custom.shading.flow \
+    lib3a.custom.stt.flow \
+    lib3a.flash \
+    lib3a.flicker \
+    lib3a.log \
+    lib3a.sensors.color \
+    lib3a.sensors.flicker \
+    lib3a.stat \
+    libAncHumanBeauty \
     libBasicModule \
+    libDBAccessor_ISP \
+    libDR \
     libDefaultFpsActor \
     libFrameRecord \
     libJpgEncPipe \
     libMcClient \
+    libMtkMediaController \
     libMtkSpeechEnh \
     libNoFpsActor \
     libOpenCL \
     libSQLiteModule_VER_ALL \
+    libSonyIMX519PdafWrapper \
     libTEECommon \
+    lib_bsscore \
     libaaa_aaautil \
     libaaa_afassist_V2 \
     libaaa_afassistctrl \
+    libaaa_feature \
     libaaa_gma \
+    libaaa_ltm \
+    libaaa_ltmx \
+    libaaa_tnc \
+    libaaa_toneutil \
     libaacvibrator \
+    libaal_cust_func \
     libaal_key \
     libaal_sec \
+    libaalservice \
     libadpcmdec_mtk \
+    libaiawb_fs \
+    libaiawb_fs_model \
+    libaiawb_moon \
+    libaiawb_moon_model \
+    libaiawb_p1ggm \
+    libaiawb_sun \
+    libaiawb_sun_model \
+    libaibc_tuning \
+    libaibc_tuning_p2 \
+    libaibc_tuning_p3 \
+    libaibc_tuning_p4 \
+    libaicapturecore \
+    libaidepth_tuning \
+    libaiseg_cache \
+    libaiseg_model \
+    libaiseg_p1ggm \
+    libaiseg_sun \
+    libaiselector \
+    libalgo.aosp.log \
     libalsautils-stock \
+    libanc_dc_base \
+    libanc_fullhdr \
+    libanc_fullhdr_impl \
+    libanc_hdr \
+    libanc_hdr_adapter_front_main \
+    libanc_hdr_adapter_rear_main \
+    libanc_hdr_adapter_rear_tele \
+    libanc_hdr_adapter_rear_uw \
+    libanc_hdr_check_nothing \
+    libanc_objdetection \
+    libanc_objdetection_impl \
+    libanc_scene \
+    libanc_single_bokeh \
+    libanc_single_bokeh_impl \
+    libanc_single_rt_bokeh \
+    libanc_supermoon \
+    libanc_supermoon_impl \
     libanc_supervq \
+    libancbase-beauty \
+    libapiwrapper \
     libapmonitor_vendor \
     libappgamepq \
     libapu_mdw \
     libapu_mdw_batch \
+    libapudcutils \
+    libapusys \
+    libarcsoft_aiscenedetection \
+    libarcsoft_beautyshot \
+    libarcsoft_dark_vision_raw \
+    libarcsoft_dualcam_refocus_image \
+    libarcsoft_dualcam_refocus_video \
+    libarcsoft_high_dynamic_range \
+    libarcsoft_high_dynamic_range_v5 \
+    libarcsoft_mf_superresolution \
+    libarcsoft_native_hdrbokeh_engine \
+    libarcsoft_panorama \
+    libarcsoft_portrait_super_night_raw \
+    libarcsoft_scbokeh_image \
+    libarcsoft_scbokeh_preview \
+    libarcsoft_super_night_raw \
+    libarcsoft_watermark \
+    libarm_egl_properties_sysprop \
+    libarm_gralloc_properties_sysprop \
     libarmnn \
     libarmnn_ndk.mtk.vndk \
     libaudio_param_parser-vnd \
@@ -467,255 +827,6 @@ PRODUCT_PACKAGES += \
     libbluetooth_mtk_pure \
     libbt-vendor \
     libbwc \
-    libcam.hal3a.custom.ae.HDRStateEvaluator \
-    libcam.zoomoverridemgr \
-    libcamalgo.WarpMapResizer \
-    libcamalgo.dngop \
-    libcamalgo.fdft \
-    libcamalgo.hdr10p \
-    libcamalgo.platform \
-    libcamalgo.sat \
-    libcamalgo.utility \
-    libcamalgo.vsdofUtil \
-    libcamalgo.warp \
-    libcarrierconfig \
-    libccci_util \
-    libcmdl \
-    libcmdl_ndk.mtk.vndk \
-    libcodec2_fsr \
-    libcodec2_mtk_c2store \
-    libcodec2_mtk_vdec \
-    libcodec2_mtk_venc \
-    libcodec2_soft_mtk_alacdec \
-    libcodec2_soft_mtk_imaadpcmdec \
-    libcodec2_soft_mtk_mp3dec \
-    libcodec2_soft_mtk_msadpcmdec \
-    libcodec2_vpp_AIMEMC_plugin \
-    libcodec2_vpp_AISR_plugin \
-    libcodec2_vpp_fa_plugin \
-    libcodec2_vpp_mi_plugin \
-    libcodec2_vpp_qt_plugin \
-    libcodec2_vpp_rs_plugin \
-    libcomposer_ext \
-    libconnfem \
-    libcustom_nvram \
-    libcvsd_mtk \
-    libdlrmsc \
-    libfeature.hdr10 \
-    libfeaturepolicy \
-    libfgauge_gm30 \
-    libfile_op \
-    libforkexecwrap \
-    libformatter \
-    libged \
-    libgf_hal \
-    libgoodixsmartpaparser \
-    libgpud \
-    libgralloc_extra \
-    libgralloc_metadata \
-    libgralloctypes_mtk \
-    libgwsdv2-ril \
-    libgwsdv3-ril \
-    libgz_uree \
-    libhdr10plusvideo \
-    libhdrvideo \
-    libheichal \
-    libhfmanager \
-    libhfmanagerwrapper \
-    libhwm \
-    libics_haptic \
-    libifcutils_mtk \
-    libimagebuffer_wrapper \
-    libion_mtk \
-    libion_ulit \
-    libjni_rater_api \
-    libjpeg-alpha-oal_vendor \
-    libjpeg-alpha_vendor \
-    libksensor \
-    libmipc \
-    libmnetlink_v104 \
-    libmp3dec_mtk \
-    libmpbase \
-    libmsbc_mtk \
-    libmtk-ril \
-    libmtk-rilop \
-    libmtkcam_cputrack \
-    libmtkcam_custom.utils \
-    libmtkcam_custom_feature \
-    libmtkcam_fdWarpConvert \
-    libmtkcam_fdsan \
-    libmtkcam_fdsan_wrapper \
-    libmtkcam_grallocutils_aidlv1helper \
-    libmtkcam_hal_custom_state \
-    libmtkcam_hal_custom_utils \
-    libmtkcam_perfctrl_wrapper \
-    libmtkcam_thirdparty.vidhance \
-    libmtkconfig \
-    libmtkconfigutils \
-    libmtkcutils \
-    libmtkhardware_legacy \
-    libmtkisp_metadata_v3 \
-    libmtklimiter_vendor \
-    libmtkmipc-ril \
-    libmtkmipc-rilop \
-    libmtknetcap \
-    libmtknetutils \
-    libmtkproperty \
-    libmtkrillog \
-    libmtkrilutils \
-    libmtkshifter_vendor \
-    libmtkspparser \
-    libmtksysutils \
-    libmtktinyxml \
-    libmtkutils \
-    libmvpu_cic_ci_compiler \
-    libmvpu_clc_cl_compiler \
-    libmvpu_clc_mvpu_debuginfo \
-    libmvpu_clc_mvpu_elf \
-    libmvpu_clc_mvpu_utility \
-    libmvpu_clc_vpu_isa \
-    libmvpu_config \
-    libmvpu_engine \
-    libmvpu_engine_pub \
-    libmvpu_pattern \
-    libmvpu_pattern_pub \
-    libmvpu_runtime_builtin \
-    libmvpu_runtime_pub \
-    libmvpu_wrapper \
-    libmvpuop_mtk_cv \
-    libmvpuop_mtk_nn \
-    libn3d_tuning \
-    libnpagent \
-    libntf \
-    libnvram \
-    libnvram_sec \
-    liboemcrypto \
-    libportrait_repair_apu \
-    libpqframework \
-    libpqhdrmetaparser \
-    libpqsharememory \
-    libpqtuning \
-    libpqxmlflagparser \
-    libpqxmlparser \
-    libratconfig \
-    librcs_interface \
-    librcs_volte_core \
-    libremosaic_wrapper \
-    libremosaiclib \
-    librgbwlightsensor \
-    librilfusion \
-    libscltm \
-    libsensor_extension \
-    libsilkybrightnesscore \
-    libspeech_enh_lib \
-    libspeechparser_vendor \
-    libstmobile_rater \
-    libstorage_otp \
-    libsysenv \
-    libtflite_mtk \
-    libtrm \
-    libultrahdr_mtk \
-    liburee_meta_drmkeyinstall \
-    libvendor.goodix.hardware.biometrics.fingerprint \
-    libvia-ril \
-    libviamipc-ril \
-    libvidhance \
-    libvividhdr \
-    libvow_ap_test_aa \
-    libvow_ap_test_dd \
-    libvow_ap_test_ha \
-    libvow_ap_test_hh \
-    libvow_ap_test_nn \
-    libvow_ap_test_trip_aa \
-    libvow_ap_test_trip_dd \
-    libvow_ap_test_trip_ha \
-    libvow_ap_test_trip_hh \
-    libvow_ap_test_trip_nn \
-    libvow_comp_test \
-    libwa_widelens_undistort \
-    libwa_widelens_undistort_impl \
-    libwifi-hal-mtk \
-    libwpfa \
-    arm.graphics-V4-ndk \
-    arm.mali.platform-V2-ndk \
-    gc02m1_mipi_raw_IdxMgr \
-    gc02m1_mipi_raw_tuning \
-    gc08a8_mipi_raw_IdxMgr \
-    gc08a8_mipi_raw_tuning \
-    gc08a8syx_mipi_raw_IdxMgr \
-    gc08a8syx_mipi_raw_tuning \
-    gc08a8xl_mipi_raw_IdxMgr \
-    gc08a8xl_mipi_raw_tuning \
-    gc16b3c2_mipi_raw_IdxMgr \
-    gc16b3c2_mipi_raw_tuning \
-    gc16b3c_mipi_raw_IdxMgr \
-    gc16b3c_mipi_raw_tuning \
-    gc16b3cofilm_mipi_raw_IdxMgr \
-    gc16b3cofilm_mipi_raw_tuning \
-    gc16b3ctxd_mipi_raw_IdxMgr \
-    gc16b3ctxd_mipi_raw_tuning \
-    gc16b3cxl_mipi_raw_IdxMgr \
-    gc16b3cxl_mipi_raw_tuning \
-    imx882_mipi_raw_IdxMgr \
-    imx882_mipi_raw_tuning \
-    imx882txd_mipi_raw_IdxMgr \
-    imx882txd_mipi_raw_tuning \
-    lib3a.ae \
-    lib3a.ae.stat \
-    lib3a.af.assist.models1d \
-    lib3a.af.assist.models2d \
-    lib3a.af.assist \
-    lib3a.af.assist.utils \
-    lib3a.af.core \
-    lib3a.af \
-    lib3a.aishutter \
-    lib3a.alsflicker \
-    lib3a.awb.core \
-    lib3a.awbsync \
-    lib3a.cculog \
-    lib3a.custom.ae.flow \
-    lib3a.custom.ae \
-    lib3a.custom.af.flow \
-    lib3a.custom.awb.flow \
-    lib3a.custom.stt.flow \
-    lib3a.flash \
-    lib3a.flicker \
-    lib3a.log \
-    lib3a.sensors.color \
-    lib3a.sensors.flicker \
-    lib3a.stat \
-    libDBAccessor_ISP \
-    libDR \
-    libMtkMediaController \
-    libSonyIMX519PdafWrapper \
-    lib_bsscore \
-    libaaa_feature \
-    libaaa_ltm \
-    libaaa_ltmx \
-    libaaa_tnc \
-    libaaa_toneutil \
-    libaal_cust_func \
-    libaalservice \
-    libaiawb_fs \
-    libaiawb_fs_model \
-    libaiawb_moon \
-    libaiawb_moon_model \
-    libaiawb_p1ggm \
-    libaiawb_sun \
-    libaiawb_sun_model \
-    libaibc_tuning \
-    libaicapturecore \
-    libaidepth_tuning \
-    libaiseg_cache \
-    libaiseg_model \
-    libaiseg_p1ggm \
-    libaiseg_sun \
-    libaiselector \
-    libalgo.aosp.log \
-    libapiwrapper \
-    libapudcutils \
-    libarm_egl_properties_sysprop \
-    libarm_gralloc_properties_sysprop \
     libcam.3a_isp.utils \
     libcam.afmgr \
     libcam.chdr \
@@ -725,6 +836,7 @@ PRODUCT_PACKAGES += \
     libcam.hal3a.afassitmgr \
     libcam.hal3a.cctsvr.v4l2 \
     libcam.hal3a.ctrl \
+    libcam.hal3a.custom.ae.HDRStateEvaluator \
     libcam.hal3a.custom \
     libcam.hal3a.guard \
     libcam.hal3a.ircutdrv \
@@ -768,30 +880,40 @@ PRODUCT_PACKAGES += \
     libcam.tuningcachemgr \
     libcam.utils.sensorprovider \
     libcam.vhdr \
+    libcam.zoomoverridemgr \
     libcam_ipc_hal3a_client \
     libcam_ipc_nvbuf_client \
     libcam_nothing \
     libcamalgo.BSSwrapper \
     libcamalgo.InlineCompGyro \
     libcamalgo.Mfbllwrapper \
+    libcamalgo.WarpMapResizer \
     libcamalgo.aibc \
     libcamalgo.aibcwrapper \
     libcamalgo.ainr \
     libcamalgo.bss \
     libcamalgo.c3d \
+    libcamalgo.dngop \
     libcamalgo.eis \
+    libcamalgo.fdft \
     libcamalgo.fsc \
     libcamalgo.fus \
     libcamalgo.gyro \
+    libcamalgo.hdr10p \
     libcamalgo.lmv \
     libcamalgo.lsc \
     libcamalgo.mcnr \
     libcamalgo.mfnr \
     libcamalgo.n3d \
+    libcamalgo.platform \
     libcamalgo.platform2 \
+    libcamalgo.sat \
     libcamalgo.tsfs \
+    libcamalgo.utility \
     libcamalgo.vaidepth \
+    libcamalgo.vsdofUtil \
     libcamalgo.vsf \
+    libcamalgo.warp \
     libcamera.custom.af_assist_buf_mgr \
     libcamera.custom.af_assist_buf_mgr_open \
     libcamera.custom.af_assist_mgr \
@@ -811,13 +933,38 @@ PRODUCT_PACKAGES += \
     libcameracustom.plugin \
     libcameracustom \
     libcameracustom_camera_db_ext \
+    libcamxextension_night \
+    libcarrierconfig \
+    libccci_util \
     libccd \
+    libcmdl \
+    libcmdl_ndk.mtk.vndk \
+    libcodec2_fsr \
+    libcodec2_mtk_c2store \
+    libcodec2_mtk_vdec \
+    libcodec2_mtk_venc \
+    libcodec2_soft_mtk_alacdec \
+    libcodec2_soft_mtk_imaadpcmdec \
+    libcodec2_soft_mtk_mp3dec \
+    libcodec2_soft_mtk_msadpcmdec \
+    libcodec2_vpp_AIMEMC_plugin \
+    libcodec2_vpp_AISR_plugin \
+    libcodec2_vpp_fa_plugin \
+    libcodec2_vpp_mi_plugin \
+    libcodec2_vpp_qt_plugin \
+    libcodec2_vpp_rs_plugin \
+    libcomposer_ext \
+    libconnfem \
+    libcustom_nvram \
+    libcvsd_mtk \
+    libdlrmsc \
     libdpframework \
     libeffecthal.base \
     libfacerelight \
     libfeature.aiseg \
     libfeature.face \
     libfeature.fwmvp \
+    libfeature.hdr10 \
     libfeature.mcnr \
     libfeature.stereo.platform \
     libfeature.stereo.provider \
@@ -830,7 +977,32 @@ PRODUCT_PACKAGES += \
     libfeature_fsc \
     libfeature_vrp \
     libfeatureiodrv_mem \
+    libfeaturepolicy \
     libfeaturepolicy_dbhandler \
+    libffavc \
+    libfgauge_gm30 \
+    libfile_op \
+    libforkexecwrap \
+    libformatter \
+    libged \
+    libgf_hal \
+    libgoodixsmartpaparser \
+    libgpud \
+    libgralloc_extra \
+    libgralloc_metadata \
+    libgralloctypes_mtk \
+    libgwsdv2-ril \
+    libgwsdv3-ril \
+    libgz_uree \
+    libhdr10plusvideo \
+    libhdrvideo \
+    libheichal \
+    libhfmanager \
+    libhfmanagerwrapper \
+    libhwm \
+    libics_haptic \
+    libifcutils_mtk \
+    libimagebuffer_wrapper \
     libimgstream-custom \
     libimgstream-drv \
     libimgstream-guard \
@@ -853,16 +1025,30 @@ PRODUCT_PACKAGES += \
     libimgsys_utils \
     libimgsys_v4l2 \
     libimgsys_wpe \
+    libion_mtk \
+    libion_ulit \
     libispfeature_mtkcam.v4l2 \
     libispinterpreter_mtkcam \
+    libjni_rater_api \
+    libjpeg-alpha-oal_vendor \
+    libjpeg-alpha_vendor \
+    libksensor \
     liblpnr \
     libmfllcore \
     libmgr3a.adapt \
+    libmipc \
     libmmagent \
     libmml \
     libmmlpqImpl \
+    libmnetlink_v104 \
     libmnl \
+    libmorpho_RapidEffect \
     libmorpho_RawDeepDenoise \
+    libmp3dec_mtk \
+    libmpbase \
+    libmsbc_mtk \
+    libmtk-ril \
+    libmtk-rilop \
     libmtk_drvb \
     libmtkcam.atmseventmgr \
     libmtkcam.debugwrapper \
@@ -892,9 +1078,12 @@ PRODUCT_PACKAGES += \
     libmtkcam_camdeliver \
     libmtkcam_camsys_sensor_utils \
     libmtkcam_coredev \
+    libmtkcam_cputrack \
     libmtkcam_custom.calibration_convertor \
     libmtkcam_custom.metadata \
     libmtkcam_custom.policy \
+    libmtkcam_custom.utils \
+    libmtkcam_custom_feature \
     libmtkcam_custom_sampleselector \
     libmtkcam_custom_zsdhdrselector \
     libmtkcam_custzone \
@@ -906,8 +1095,12 @@ PRODUCT_PACKAGES += \
     libmtkcam_exif \
     libmtkcam_externalisploader \
     libmtkcam_faceResultHandler \
+    libmtkcam_fdWarpConvert \
+    libmtkcam_fdsan \
+    libmtkcam_fdsan_wrapper \
     libmtkcam_feature_utils \
     libmtkcam_grallocutils \
+    libmtkcam_grallocutils_aidlv1helper \
     libmtkcam_hal3a_provider \
     libmtkcam_hal_aidl_common \
     libmtkcam_hal_aidl_device \
@@ -928,6 +1121,8 @@ PRODUCT_PACKAGES += \
     libmtkcam_hal_core_utils \
     libmtkcam_hal_custom \
     libmtkcam_hal_custom_provider \
+    libmtkcam_hal_custom_state \
+    libmtkcam_hal_custom_utils \
     libmtkcam_halisp_custom \
     libmtkcam_hwnode.jpegnode \
     libmtkcam_hwnode.p2 \
@@ -953,6 +1148,7 @@ PRODUCT_PACKAGES += \
     libmtkcam_p1node \
     libmtkcam_packutils \
     libmtkcam_perfctrl \
+    libmtkcam_perfctrl_wrapper \
     libmtkcam_pip \
     libmtkcam_pipeline \
     libmtkcam_pipeline_fbm \
@@ -984,28 +1180,143 @@ PRODUCT_PACKAGES += \
     libmtkcam_thirdparty.customzone \
     libmtkcam_thirdparty.mtk \
     libmtkcam_thirdparty \
+    libmtkcam_thirdparty.vidhance \
     libmtkcam_tuning_utils \
     libmtkcam_ulog \
     libmtkcam_zsl_customselector \
     libmtkcm_ipc_dummy \
+    libmtkconfig \
+    libmtkconfigutils \
+    libmtkcutils \
+    libmtkhardware_legacy \
+    libmtkisp_metadata_v3 \
+    libmtklimiter_vendor \
     libmtkltm \
+    libmtkmipc-ril \
+    libmtkmipc-rilop \
+    libmtknetcap \
+    libmtknetutils \
+    libmtkproperty \
+    libmtkrillog \
+    libmtkrilutils \
+    libmtkshifter_vendor \
+    libmtkspparser \
+    libmtksysutils \
+    libmtktinyxml \
+    libmtkutils \
+    libmvpu_cic_ci_compiler \
+    libmvpu_clc_cl_compiler \
+    libmvpu_clc_mvpu_debuginfo \
+    libmvpu_clc_mvpu_elf \
+    libmvpu_clc_mvpu_utility \
+    libmvpu_clc_vpu_isa \
+    libmvpu_config \
+    libmvpu_engine \
+    libmvpu_engine_pub \
+    libmvpu_pattern \
+    libmvpu_pattern_pub \
+    libmvpu_runtime_builtin \
+    libmvpu_runtime_pub \
+    libmvpu_wrapper \
+    libmvpuop_mtk_cv \
+    libmvpuop_mtk_nn \
+    libn3d_tuning \
     libneuralnetworks_sl_driver_mtk_prebuilt \
     libneuron_adapter_mc \
     libneuron_adapter_mgvi \
+    libneuron_graph_delegate.mtk \
+    libneuron_platform \
     libneuron_runtime.7 \
     libneuron_runtime \
     libneuron_wrapper \
     libnir_neon_driver \
+    libnoteengine \
+    libnpagent \
+    libntcamallocator \
+    libntcamcommonutils \
+    libntcamcore \
+    libntcamera2ndk_vendor_v2 \
+    libntcamextened \
+    libntcamimage_io \
+    libntcammetadata \
+    libntcampipepb \
+    libntcamselector \
+    libntcamskia \
+    libntcamthread \
+    libntcamultrahdr \
+    libntcamyuv \
+    libntf \
+    libntofflinepostproc \
+    libnvram \
+    libnvram_sec \
+    liboemcrypto \
     libpda_usdriver \
+    libpfr \
+    libportrait_repair_apu \
     libpq_cust_base \
     libpq_sec \
     libpqconfig \
+    libpqframework \
+    libpqhdrmetaparser \
     libpqparamparser \
+    libpqsharememory \
+    libpqtuning \
+    libpqxmlflagparser \
+    libpqxmlparser \
+    libratconfig \
+    librcs_interface \
+    librcs_volte_core \
+    libremosaic_wrapper \
+    libremosaiclib \
+    librender_lib \
+    librgbwlightsensor \
+    librilfusion \
+    libscltm \
+    libsdk_sr \
+    libsensor_extension \
+    libsilkybrightnesscore \
+    libspeech_enh_lib \
+    libspeechparser_vendor \
+    libstmobile_effect \
+    libstmobile_rater \
+    libstorage_otp \
+    libsysenv \
+    libtflite_mtk \
+    libtrm \
+    libultrahdr_mtk \
+    liburee_meta_drmkeyinstall \
     libvega_common \
+    libvendor.goodix.hardware.biometrics.fingerprint \
+    libvia-ril \
+    libviamipc-ril \
+    libvidhance \
+    libvividhdr \
+    libvow_ap_test_aa \
+    libvow_ap_test_dd \
+    libvow_ap_test_ha \
+    libvow_ap_test_hh \
+    libvow_ap_test_nn \
+    libvow_ap_test_trip_aa \
+    libvow_ap_test_trip_dd \
+    libvow_ap_test_trip_ha \
+    libvow_ap_test_trip_hh \
+    libvow_ap_test_trip_nn \
+    libvow_comp_test \
+    libvpu \
+    libvpu5 \
+    libwa_depth \
     libwa_opticalzoomfactor \
+    libwa_refocus \
+    libwa_rtdof \
     libwa_sat \
+    libwa_widelens_undistort \
+    libwa_widelens_undistort_impl \
+    libwifi-hal-mtk \
+    libwpfa \
     mtk000_mipi_raw_IdxMgr \
     mtk000_mipi_raw_tuning \
+    mtk_lbs_service-impl \
+    nfc_nci.thn31nfc.tms \
     ov50d40_mipi_raw_IdxMgr \
     ov50d40_mipi_raw_tuning \
     ov50d40ofilm_mipi_raw_IdxMgr \
@@ -1018,7 +1329,6 @@ PRODUCT_PACKAGES += \
     sc202cs_mipi_raw_tuning \
     sc202cssj_mipi_raw_IdxMgr \
     sc202cssj_mipi_raw_tuning \
-    nfc_nci.thn31nfc.tms \
     tms-cos-dl-common \
     tms-cos-dl-ree \
     tms-utils \
@@ -1026,6 +1336,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.apmonitor@2.0 \
     vendor.mediatek.hardware.apuware.apusys-V3-ndk \
     vendor.mediatek.hardware.apuware.utils-V1-ndk \
+    vendor.mediatek.hardware.apuware.utils@2.0 \
     vendor.mediatek.hardware.audio@8.1 \
     vendor.mediatek.hardware.bluetooth.audio-V1-ndk \
     vendor.mediatek.hardware.bluetooth.audio@2.1 \
@@ -1043,6 +1354,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.composer_ext@1.0 \
     vendor.mediatek.hardware.gnss-V1-ndk \
     vendor.mediatek.hardware.gnss.batching-V1-ndk \
+    vendor.mediatek.hardware.lbs-V1-ndk \
     vendor.mediatek.hardware.mmagent-V1-ndk \
     vendor.mediatek.hardware.mmlpq-V3-ndk \
     vendor.mediatek.hardware.mtkradioex.assist-V1-ndk \
@@ -1077,24 +1389,29 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.rcs-V1-ndk \
     vendor.mediatek.hardware.rcs@2.0 \
     vendor.mediatek.hardware.videotelephony-V1-ndk-vendor \
+    vendor.noth.hardware.camera-V1-ndk \
+    vendor.noth.hardware.camera-service-impl \
     vendor.noth.hardware.sensor.sensor_extension-V1-ndk \
     vendor.tms.tmsnfc_aidl-V1-ndk \
     vendor.trustonic.tee.tui@1.0 \
     vendor.trustonic.tee@1.0 \
     vendor.trustonic.tee@1.1 \
     libcomutils \
+    libencoderjpeg_jni \
     libimsma \
     libimsma_adapt \
     libimsma_rtp \
     libimsma_socketwrapper \
     libmtk_vt_service \
     libmtk_vt_wrapper \
+    libofflineproc_jni_aidl \
     libsignal \
     libsink-mtk \
     libsource \
     libvcodec_cap \
     libvcodec_capenc \
     libvt_avsync \
+    vendor.mediatek.hardware.camera.isphal-V1-ndk_system_ext \
     vendor.mediatek.hardware.videotelephony-V1-ndk \
     vendor.mediatek.hardware.videotelephony@1.0 \
     com.google.android.widevine.nonupdatable \
@@ -1103,13 +1420,14 @@ PRODUCT_PACKAGES += \
     ImsService \
     MtkGbaService \
     MtkTelephonyAssist \
+    NTCamera \
+    NTGallery \
+    NothingExperience \
+    androidx.camera.extensions.impl.advanced \
     com.android.hotwordenrollment.common.util \
     mediatek-ims-base \
-    mediatek-ims-common \
     mediatek-ims-extension-plugin \
-    mediatek-telecom-common \
     mediatek-telephony-base \
-    mediatek-telephony-common \
     CommandService.xml \
     android.hardware.gatekeeper-service.trustonic.xml \
     android.hardware.neuralnetworks-shim-service-mtk.xml \
@@ -1128,7 +1446,9 @@ PRODUCT_PACKAGES += \
     manifest_media_c2_V1_2_default.xml \
     manifest_mmlpq.xml \
     mapper.mediatek.xml \
+    mtk_lbs_service.xml \
     mtkgnss-batching.xml \
+    vendor.noth.hardware.camera-service.xml \
     vendor.noth.hardware.sensor.sensor_extension-service.xml \
     vendor.nothing.hardware.biometrics.fingerprint-service.xml \
     ccci_mdinit \
@@ -1138,13 +1458,13 @@ PRODUCT_PACKAGES += \
     fuelgauged_nvram \
     android.hardware.gatekeeper-service.trustonic \
     android.hardware.gnss-service.mediatek \
+    android.hardware.graphics.allocator-V2-service-mediatek \
     android.hardware.graphics.composer@3.2-service \
     android.hardware.media.c2@1.2-mediatek-64b \
     android.hardware.neuralnetworks-shim-service-mtk \
     android.hardware.nfc-service-tms \
     android.hardware.secure_element@1.2-service-mediatek \
     android.hardware.security.keymint@3.0-service.trustonic \
-    android.hardware.graphics.allocator-V2-service-mediatek.mt6878 \
     camerahalserver \
     mtkfusionrild \
     tetheroffloadservice \
@@ -1153,6 +1473,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mmlpq@V1-service \
     vendor.mediatek.hardware.nvram-service \
     vendor.mediatek.hardware.pq_aidl-service \
+    vendor.noth.hardware.camera-service \
     vendor.noth.hardware.sensor.sensor_extension-service \
     vendor.nothing.hardware.biometrics.fingerprint-service \
     vendor.trustonic.tee@1.1-service \
@@ -1161,6 +1482,7 @@ PRODUCT_PACKAGES += \
     mcDriverDaemon \
     mnld \
     mtk_agpsd \
+    mtk_lbs_service \
     muxreport \
     ntf-service \
     nvram_daemon \
@@ -1171,455 +1493,9 @@ PRODUCT_PACKAGES += \
     vtservice
 
 PRODUCT_PACKAGES += \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_ae_ParameterDB_ae_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_af_ParameterDB_af_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_awb_ParameterDB_awb_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_awbsync_ParameterDB_awbsync_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_feature_ParameterDB_feature_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_flash_ParameterDB_flash_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_flashcali_ParameterDB_flashcali_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_ParameterDB_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_sw_top_control_data_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_top_control_data_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_pd_ParameterDB_pd_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_pipeline_ParameterDB_pipeline_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tone_ParameterDB_tone_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_default_sensor_ISP_mapping_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_default_sensor_ISP_param_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_gc02m1_mipi_raw_ISP_mapping_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_gc02m1_mipi_raw_ISP_param_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_gc08a8_mipi_raw_ISP_mapping_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_gc08a8_mipi_raw_ISP_param_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_gc08a8syx_mipi_raw_ISP_mapping_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_gc08a8syx_mipi_raw_ISP_param_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_gc08a8xl_mipi_raw_ISP_mapping_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_gc08a8xl_mipi_raw_ISP_param_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_gc16b3c2_mipi_raw_ISP_mapping_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_gc16b3c2_mipi_raw_ISP_param_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_gc16b3c_mipi_raw_ISP_mapping_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_gc16b3c_mipi_raw_ISP_param_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_gc16b3cofilm_mipi_raw_ISP_mapping_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_gc16b3cofilm_mipi_raw_ISP_param_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_gc16b3ctxd_mipi_raw_ISP_mapping_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_gc16b3ctxd_mipi_raw_ISP_param_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_gc16b3cxl_mipi_raw_ISP_mapping_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_gc16b3cxl_mipi_raw_ISP_param_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx882_mipi_raw_ISP_mapping_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx882_mipi_raw_ISP_param_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx882txd_mipi_raw_ISP_mapping_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_imx882txd_mipi_raw_ISP_param_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_ISP_info_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_ov50d40_mipi_raw_ISP_mapping_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_ov50d40_mipi_raw_ISP_param_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_ov50d40ofilm_mipi_raw_ISP_mapping_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_ov50d40ofilm_mipi_raw_ISP_param_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_s5kgn9sp_mipi_raw_ISP_mapping_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_s5kgn9sp_mipi_raw_ISP_param_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_s5kgn9spofxian_mipi_raw_ISP_mapping_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_s5kgn9spofxian_mipi_raw_ISP_param_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_sc202cs_mipi_raw_ISP_mapping_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_sc202cs_mipi_raw_ISP_param_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_sc202cssj_mipi_raw_ISP_mapping_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_sc202cssj_mipi_raw_ISP_param_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_aov_default_sensor_ISP_mapping_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_aov_default_sensor_ISP_param_db \
-    vendor_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_aov_ISP_info_db \
-    vendor_bin_hw_android_hardware_graphics_allocator-V2-service-mediatek \
-    vendor_bin_hw_camerahalserver \
-    vendor_lib64_egl_libGLES_mali_so \
     vendor_lib64_hw_audio_primary_mt6878_so \
-    vendor_lib64_hw_android_hardware_graphics_allocator-V2-mediatek_so \
-    vendor_lib64_hw_android_hardware_graphics_mapper@4_0-impl-mediatek_so \
-    vendor_lib64_hw_mapper_mediatek_so \
-    vendor_lib64_hw_vendor_mediatek_hardware_pq_aidl-impl_so \
-    vendor_lib64_hw_vulkan_mali_so \
-    vendor_lib64_hw_sensors_mt6878_so \
-    vendor_lib64_arm_graphics-V4-ndk_so \
-    vendor_lib64_arm_mali_platform-V2-ndk_so \
-    vendor_lib64_gc02m1_mipi_raw_IdxMgr_so \
-    vendor_lib64_gc02m1_mipi_raw_tuning_so \
-    vendor_lib64_gc08a8_mipi_raw_IdxMgr_so \
-    vendor_lib64_gc08a8_mipi_raw_tuning_so \
-    vendor_lib64_gc08a8syx_mipi_raw_IdxMgr_so \
-    vendor_lib64_gc08a8syx_mipi_raw_tuning_so \
-    vendor_lib64_gc08a8xl_mipi_raw_IdxMgr_so \
-    vendor_lib64_gc08a8xl_mipi_raw_tuning_so \
-    vendor_lib64_gc16b3c2_mipi_raw_IdxMgr_so \
-    vendor_lib64_gc16b3c2_mipi_raw_tuning_so \
-    vendor_lib64_gc16b3c_mipi_raw_IdxMgr_so \
-    vendor_lib64_gc16b3c_mipi_raw_tuning_so \
-    vendor_lib64_gc16b3cofilm_mipi_raw_IdxMgr_so \
-    vendor_lib64_gc16b3cofilm_mipi_raw_tuning_so \
-    vendor_lib64_gc16b3ctxd_mipi_raw_IdxMgr_so \
-    vendor_lib64_gc16b3ctxd_mipi_raw_tuning_so \
-    vendor_lib64_gc16b3cxl_mipi_raw_IdxMgr_so \
-    vendor_lib64_gc16b3cxl_mipi_raw_tuning_so \
-    vendor_lib64_imx882_mipi_raw_IdxMgr_so \
-    vendor_lib64_imx882_mipi_raw_tuning_so \
-    vendor_lib64_imx882txd_mipi_raw_IdxMgr_so \
-    vendor_lib64_imx882txd_mipi_raw_tuning_so \
-    vendor_lib64_lib3a_ae_so \
-    vendor_lib64_lib3a_ae_stat_so \
-    vendor_lib64_lib3a_af_assist_models1d_so \
-    vendor_lib64_lib3a_af_assist_models2d_so \
-    vendor_lib64_lib3a_af_assist_so \
-    vendor_lib64_lib3a_af_assist_utils_so \
-    vendor_lib64_lib3a_af_core_so \
-    vendor_lib64_lib3a_af_so \
-    vendor_lib64_lib3a_aishutter_so \
-    vendor_lib64_lib3a_alsflicker_so \
-    vendor_lib64_lib3a_awb_core_so \
-    vendor_lib64_lib3a_awbsync_so \
-    vendor_lib64_lib3a_cculog_so \
-    vendor_lib64_lib3a_custom_ae_flow_so \
-    vendor_lib64_lib3a_custom_ae_so \
-    vendor_lib64_lib3a_custom_af_flow_so \
-    vendor_lib64_lib3a_custom_awb_flow_so \
-    vendor_lib64_lib3a_custom_stt_flow_so \
-    vendor_lib64_lib3a_flash_so \
-    vendor_lib64_lib3a_flicker_so \
-    vendor_lib64_lib3a_log_so \
-    vendor_lib64_lib3a_sensors_color_so \
-    vendor_lib64_lib3a_sensors_flicker_so \
-    vendor_lib64_lib3a_stat_so \
-    vendor_lib64_libDBAccessor_ISP_so \
-    vendor_lib64_libDR_so \
-    vendor_lib64_libMtkMediaController_so \
-    vendor_lib64_libSonyIMX519PdafWrapper_so \
-    vendor_lib64_lib_bsscore_so \
-    vendor_lib64_libaaa_feature_so \
-    vendor_lib64_libaaa_ltm_so \
-    vendor_lib64_libaaa_ltmx_so \
-    vendor_lib64_libaaa_tnc_so \
-    vendor_lib64_libaaa_toneutil_so \
-    vendor_lib64_libaal_cust_func_so \
-    vendor_lib64_libaalservice_so \
-    vendor_lib64_libaiawb_fs_so \
-    vendor_lib64_libaiawb_fs_model_so \
-    vendor_lib64_libaiawb_moon_so \
-    vendor_lib64_libaiawb_moon_model_so \
-    vendor_lib64_libaiawb_p1ggm_so \
-    vendor_lib64_libaiawb_sun_so \
-    vendor_lib64_libaiawb_sun_model_so \
-    vendor_lib64_libaibc_tuning_so \
-    vendor_lib64_libaicapturecore_so \
-    vendor_lib64_libaidepth_tuning_so \
-    vendor_lib64_libaiseg_cache_so \
-    vendor_lib64_libaiseg_model_so \
-    vendor_lib64_libaiseg_p1ggm_so \
-    vendor_lib64_libaiseg_sun_so \
-    vendor_lib64_libaiselector_so \
-    vendor_lib64_libalgo_aosp_log_so \
-    vendor_lib64_libapiwrapper_so \
-    vendor_lib64_libapudcutils_so \
-    vendor_lib64_libarm_egl_properties_sysprop_so \
-    vendor_lib64_libarm_gralloc_properties_sysprop_so \
-    vendor_lib64_libcam_3a_isp_utils_so \
-    vendor_lib64_libcam_afmgr_so \
-    vendor_lib64_libcam_chdr_so \
-    vendor_lib64_libcam_feature_utils_so \
-    vendor_lib64_libcam_fw_me_tcy_so \
-    vendor_lib64_libcam_hal3a_3aProvider_so \
-    vendor_lib64_libcam_hal3a_afassitmgr_so \
-    vendor_lib64_libcam_hal3a_cctsvr_v4l2_so \
-    vendor_lib64_libcam_hal3a_ctrl_so \
-    vendor_lib64_libcam_hal3a_custom_so \
-    vendor_lib64_libcam_hal3a_guard_so \
-    vendor_lib64_libcam_hal3a_ircutdrv_so \
-    vendor_lib64_libcam_hal3a_lensdrv_so \
-    vendor_lib64_libcam_hal3a_log_so \
-    vendor_lib64_libcam_hal3a_lscMgrApi_so \
-    vendor_lib64_libcam_hal3a_oisdrv_so \
-    vendor_lib64_libcam_hal3a_ozoomdrv_so \
-    vendor_lib64_libcam_hal3a_pdstatmgr_so \
-    vendor_lib64_libcam_hal3a_policy_so \
-    vendor_lib64_libcam_hal3a_so \
-    vendor_lib64_libcam_hal3a_tofdrv_so \
-    vendor_lib64_libcam_hal3a_utils_so \
-    vendor_lib64_libcam_hal3a_v3_ae_v4l2_so \
-    vendor_lib64_libcam_hal3a_v3_ai3a_v4l2_so \
-    vendor_lib64_libcam_hal3a_v3_awb_v4l2_so \
-    vendor_lib64_libcam_hal3a_v3_dng_so \
-    vendor_lib64_libcam_hal3a_v3_flash_v4l2_so \
-    vendor_lib64_libcam_hal3a_v3_flicker_v4l2_so \
-    vendor_lib64_libcam_hal3a_v3_ir_v4l2_so \
-    vendor_lib64_libcam_hal3a_v3_lsctbl_v4l2_so \
-    vendor_lib64_libcam_hal3a_v3_nvram_v4l2_so \
-    vendor_lib64_libcam_hal3a_v3_sensor_v4l2_so \
-    vendor_lib64_libcam_hal3a_v3_strobe_so \
-    vendor_lib64_libcam_hal3a_v3_stt_v4l2_so \
-    vendor_lib64_libcam_hal3a_v3_tone_mgr_v4l2_so \
-    vendor_lib64_libcam_halisp_SwTopCtrlMgr_so \
-    vendor_lib64_libcam_halisp_TopCtrlMgr_so \
-    vendor_lib64_libcam_halisp_TuningDataProvider_so \
-    vendor_lib64_libcam_halisp_TuningDataProviderFactory_so \
-    vendor_lib64_libcam_halisp_imp_v4l2_so \
-    vendor_lib64_libcam_halisp_plugin_so \
-    vendor_lib64_libcam_halisp_utils_so \
-    vendor_lib64_libcam_halisp_v4l2_so \
-    vendor_lib64_libcam_halsensor_hwintegration_so \
-    vendor_lib64_libcam_halsensor_so \
-    vendor_lib64_libcam_isptuning_v4l2_so \
-    vendor_lib64_libcam_peripheralcontroller_so \
-    vendor_lib64_libcam_sensor_mode_helper_so \
-    vendor_lib64_libcam_sensor_mode_helper_custom_so \
-    vendor_lib64_libcam_tuningcachemgr_so \
-    vendor_lib64_libcam_utils_sensorprovider_so \
-    vendor_lib64_libcam_vhdr_so \
-    vendor_lib64_libcam_ipc_hal3a_client_so \
-    vendor_lib64_libcam_ipc_nvbuf_client_so \
-    vendor_lib64_libcam_nothing_so \
-    vendor_lib64_libcamalgo_BSSwrapper_so \
-    vendor_lib64_libcamalgo_InlineCompGyro_so \
-    vendor_lib64_libcamalgo_Mfbllwrapper_so \
-    vendor_lib64_libcamalgo_aibc_so \
-    vendor_lib64_libcamalgo_aibcwrapper_so \
-    vendor_lib64_libcamalgo_ainr_so \
-    vendor_lib64_libcamalgo_bss_so \
-    vendor_lib64_libcamalgo_c3d_so \
-    vendor_lib64_libcamalgo_eis_so \
-    vendor_lib64_libcamalgo_fsc_so \
-    vendor_lib64_libcamalgo_fus_so \
-    vendor_lib64_libcamalgo_gyro_so \
-    vendor_lib64_libcamalgo_lmv_so \
-    vendor_lib64_libcamalgo_lsc_so \
-    vendor_lib64_libcamalgo_mcnr_so \
-    vendor_lib64_libcamalgo_mfnr_so \
-    vendor_lib64_libcamalgo_n3d_so \
-    vendor_lib64_libcamalgo_platform2_so \
-    vendor_lib64_libcamalgo_tsfs_so \
-    vendor_lib64_libcamalgo_vaidepth_so \
-    vendor_lib64_libcamalgo_vsf_so \
-    vendor_lib64_libcamera_custom_af_assist_buf_mgr_so \
-    vendor_lib64_libcamera_custom_af_assist_buf_mgr_open_so \
-    vendor_lib64_libcamera_custom_af_assist_mgr_so \
-    vendor_lib64_libcamera_custom_af_assist_pdp_so \
-    vendor_lib64_libcamera_customae_so \
-    vendor_lib64_libcamera_customflk_so \
-    vendor_lib64_libcameracustom_camera_3a_so \
-    vendor_lib64_libcameracustom_camera_isp_so \
-    vendor_lib64_libcameracustom_camera_sensors_so \
-    vendor_lib64_libcameracustom_camera_calibration_core_so \
-    vendor_lib64_libcameracustom_camera_exif_so \
-    vendor_lib64_libcameracustom_cfg_setting_core_so \
-    vendor_lib64_libcameracustom_eis_so \
-    vendor_lib64_libcameracustom_flashlight_so \
-    vendor_lib64_libcameracustom_imgsensor_core_so \
-    vendor_lib64_libcameracustom_lens_so \
-    vendor_lib64_libcameracustom_plugin_so \
-    vendor_lib64_libcameracustom_so \
-    vendor_lib64_libcameracustom_camera_db_ext_so \
-    vendor_lib64_libccd_so \
-    vendor_lib64_libdpframework_so \
-    vendor_lib64_libeffecthal_base_so \
-    vendor_lib64_libfacerelight_so \
-    vendor_lib64_libfeature_aiseg_so \
-    vendor_lib64_libfeature_face_so \
-    vendor_lib64_libfeature_fwmvp_so \
-    vendor_lib64_libfeature_mcnr_so \
-    vendor_lib64_libfeature_stereo_platform_so \
-    vendor_lib64_libfeature_stereo_provider_so \
-    vendor_lib64_libfeature_vsdof_3a_info_provider_so \
-    vendor_lib64_libfeature_vsdof_fd_info_provider_so \
-    vendor_lib64_libfeature_vsdof_hal_so \
-    vendor_lib64_libfeature_vsdof_nvram_provider_so \
-    vendor_lib64_libfeature_vsdof_ot_info_provider_so \
-    vendor_lib64_libfeature_eis_so \
-    vendor_lib64_libfeature_fsc_so \
-    vendor_lib64_libfeature_vrp_so \
-    vendor_lib64_libfeatureiodrv_mem_so \
-    vendor_lib64_libfeaturepolicy_dbhandler_so \
-    vendor_lib64_libimgstream-custom_so \
-    vendor_lib64_libimgstream-drv_so \
-    vendor_lib64_libimgstream-guard_so \
-    vendor_lib64_libimgsys_adl_so \
-    vendor_lib64_libimgsys_cmt_so \
-    vendor_lib64_libimgsys_custom_so \
-    vendor_lib64_libimgsys_daemon_so \
-    vendor_lib64_libimgsys_dip_so \
-    vendor_lib64_libimgsys_drvcommon_so \
-    vendor_lib64_libimgsys_gce_so \
-    vendor_lib64_libimgsys_main_so \
-    vendor_lib64_libimgsys_me_so \
-    vendor_lib64_libimgsys_pqdip_so \
-    vendor_lib64_libimgsys_sensor_so \
-    vendor_lib64_libimgsys_system_so \
-    vendor_lib64_libimgsys_taskhandler_so \
-    vendor_lib64_libimgsys_tdrhal_so \
-    vendor_lib64_libimgsys_tile_so \
-    vendor_lib64_libimgsys_traw_so \
-    vendor_lib64_libimgsys_utils_so \
-    vendor_lib64_libimgsys_v4l2_so \
-    vendor_lib64_libimgsys_wpe_so \
-    vendor_lib64_libispfeature_mtkcam_v4l2_so \
-    vendor_lib64_libispinterpreter_mtkcam_so \
-    vendor_lib64_liblpnr_so \
-    vendor_lib64_libmfllcore_so \
-    vendor_lib64_libmgr3a_adapt_so \
-    vendor_lib64_libmmagent_so \
-    vendor_lib64_libmml_so \
-    vendor_lib64_libmmlpqImpl_so \
-    vendor_lib64_libmnl_so \
-    vendor_lib64_libmorpho_RawDeepDenoise_so \
-    vendor_lib64_libmtk_drvb_so \
-    vendor_lib64_libmtkcam_atmseventmgr_so \
-    vendor_lib64_libmtkcam_debugwrapper_so \
-    vendor_lib64_libmtkcam_eventcallback_so \
-    vendor_lib64_libmtkcam_featurepipe_capture_so \
-    vendor_lib64_libmtkcam_featurepipe_depthmap_so \
-    vendor_lib64_libmtkcam_featurepipe_p2g_so \
-    vendor_lib64_libmtkcam_featurepipe_streaming_so \
-    vendor_lib64_libmtkcam_featurepipe_vsdof_wrapper_so \
-    vendor_lib64_libmtkcam_logicalcaminfoprovider_so \
-    vendor_lib64_libmtkcam_logicalmodule_so \
-    vendor_lib64_libmtkcam_ndd_limit_so \
-    vendor_lib64_libmtkcam_aicolor_so \
-    vendor_lib64_libmtkcam_aie_so \
-    vendor_lib64_libmtkcam_android_zslprocessor_so \
-    vendor_lib64_libmtkcam_aov_so \
-    vendor_lib64_libmtkcam_aov_cust_so \
-    vendor_lib64_libmtkcam_aov_plat_so \
-    vendor_lib64_libmtkcam_aov_sys_so \
-    vendor_lib64_libmtkcam_buffer_flush_so \
-    vendor_lib64_libmtkcam_c2psperfctrl_so \
-    vendor_lib64_libmtkcam_ca_so \
-    vendor_lib64_libmtkcam_calibration_provider_so \
-    vendor_lib64_libmtkcam_camcontroller_so \
-    vendor_lib64_libmtkcam_camcoordinator_so \
-    vendor_lib64_libmtkcam_camctrl_so \
-    vendor_lib64_libmtkcam_camdeliver_so \
-    vendor_lib64_libmtkcam_camsys_sensor_utils_so \
-    vendor_lib64_libmtkcam_coredev_so \
-    vendor_lib64_libmtkcam_custom_calibration_convertor_so \
-    vendor_lib64_libmtkcam_custom_metadata_so \
-    vendor_lib64_libmtkcam_custom_policy_so \
-    vendor_lib64_libmtkcam_custom_sampleselector_so \
-    vendor_lib64_libmtkcam_custom_zsdhdrselector_so \
-    vendor_lib64_libmtkcam_custzone_so \
-    vendor_lib64_libmtkcam_debugutils_so \
-    vendor_lib64_libmtkcam_detectnode_so \
-    vendor_lib64_libmtkcam_devicemgr_so \
-    vendor_lib64_libmtkcam_diputils_so \
-    vendor_lib64_libmtkcam_dma_map_so \
-    vendor_lib64_libmtkcam_exif_so \
-    vendor_lib64_libmtkcam_externalisploader_so \
-    vendor_lib64_libmtkcam_faceResultHandler_so \
-    vendor_lib64_libmtkcam_feature_utils_so \
-    vendor_lib64_libmtkcam_grallocutils_so \
-    vendor_lib64_libmtkcam_hal3a_provider_so \
-    vendor_lib64_libmtkcam_hal_aidl_common_so \
-    vendor_lib64_libmtkcam_hal_aidl_device_so \
-    vendor_lib64_libmtkcam_hal_aidl_provider_so \
-    vendor_lib64_libmtkcam_hal_aidl_utils_so \
-    vendor_lib64_libmtkcam_hal_android_app_cbadaptor_so \
-    vendor_lib64_libmtkcam_hal_android_common_so \
-    vendor_lib64_libmtkcam_hal_android_device_so \
-    vendor_lib64_libmtkcam_hal_android_provider_so \
-    vendor_lib64_libmtkcam_hal_android_utils_so \
-    vendor_lib64_libmtkcam_hal_aov_so \
-    vendor_lib64_libmtkcam_hal_core_app_so \
-    vendor_lib64_libmtkcam_hal_core_app_cbadaptor_so \
-    vendor_lib64_libmtkcam_hal_core_device_so \
-    vendor_lib64_libmtkcam_hal_core_devicesessionpolicy_so \
-    vendor_lib64_libmtkcam_hal_core_featurepolicy_so \
-    vendor_lib64_libmtkcam_hal_core_provider_so \
-    vendor_lib64_libmtkcam_hal_core_utils_so \
-    vendor_lib64_libmtkcam_hal_custom_so \
-    vendor_lib64_libmtkcam_hal_custom_provider_so \
-    vendor_lib64_libmtkcam_halisp_custom_so \
-    vendor_lib64_libmtkcam_hwnode_jpegnode_so \
-    vendor_lib64_libmtkcam_hwnode_p2_so \
-    vendor_lib64_libmtkcam_hwnode_so \
-    vendor_lib64_libmtkcam_hwutils_so \
-    vendor_lib64_libmtkcam_hwutils_android_so \
-    vendor_lib64_libmtkcam_hwutils_poweronoffcontroller_so \
-    vendor_lib64_libmtkcam_imgbuf_v2_so \
-    vendor_lib64_libmtkcam_ipc_core_so \
-    vendor_lib64_libmtkcam_ipc_wrapper_common_client_so \
-    vendor_lib64_libmtkcam_ipc_wrapper_common_server_so \
-    vendor_lib64_libmtkcam_ipc_wrapper_mtk_client_so \
-    vendor_lib64_libmtkcam_ipc_wrapper_mtk_server_so \
-    vendor_lib64_libmtkcam_jsonconvertor_so \
-    vendor_lib64_libmtkcam_jsondata_so \
-    vendor_lib64_libmtkcam_mapping_mgr_so \
-    vendor_lib64_libmtkcam_metaconv_so \
-    vendor_lib64_libmtkcam_metadata_so \
-    vendor_lib64_libmtkcam_metastore_so \
-    vendor_lib64_libmtkcam_modulefactory_custom_so \
-    vendor_lib64_libmtkcam_modulefactory_utils_so \
-    vendor_lib64_libmtkcam_modulehelper_so \
-    vendor_lib64_libmtkcam_p1node_so \
-    vendor_lib64_libmtkcam_packutils_so \
-    vendor_lib64_libmtkcam_perfctrl_so \
-    vendor_lib64_libmtkcam_pip_so \
-    vendor_lib64_libmtkcam_pipeline_so \
-    vendor_lib64_libmtkcam_pipeline_fbm_so \
-    vendor_lib64_libmtkcam_pipelinemodel_capture_so \
-    vendor_lib64_libmtkcam_pipelinemodel_session_so \
-    vendor_lib64_libmtkcam_pipelinemodel_utils_so \
-    vendor_lib64_libmtkcam_pipelinepolicy-security_so \
-    vendor_lib64_libmtkcam_pipelinepolicy-smvr_so \
-    vendor_lib64_libmtkcam_pipelinepolicy_so \
-    vendor_lib64_libmtkcam_pipelinepolicy_factory_so \
-    vendor_lib64_libmtkcam_pipemgr_so \
-    vendor_lib64_libmtkcam_postprocprovider_so \
-    vendor_lib64_libmtkcam_preprocnode_so \
-    vendor_lib64_libmtkcam_prerelease_so \
-    vendor_lib64_libmtkcam_proc_so \
-    vendor_lib64_libmtkcam_request_requlator_so \
-    vendor_lib64_libmtkcam_resourcedecision_so \
-    vendor_lib64_libmtkcam_resourcedecision_custom_so \
-    vendor_lib64_libmtkcam_sensorcontrol_so \
-    vendor_lib64_libmtkcam_simager_so \
-    vendor_lib64_libmtkcam_smvr_so \
-    vendor_lib64_libmtkcam_stdutils_so \
-    vendor_lib64_libmtkcam_streamutils_so \
-    vendor_lib64_libmtkcam_synchelper_so \
-    vendor_lib64_libmtkcam_sysutils_so \
-    vendor_lib64_libmtkcam_taskmgr_so \
-    vendor_lib64_libmtkcam_thirdparty_core_so \
-    vendor_lib64_libmtkcam_thirdparty_customer_so \
-    vendor_lib64_libmtkcam_thirdparty_customzone_so \
-    vendor_lib64_libmtkcam_thirdparty_mtk_so \
-    vendor_lib64_libmtkcam_thirdparty_so \
-    vendor_lib64_libmtkcam_tuning_utils_so \
-    vendor_lib64_libmtkcam_ulog_so \
-    vendor_lib64_libmtkcam_zsl_customselector_so \
-    vendor_lib64_libmtkcm_ipc_dummy_so \
-    vendor_lib64_libmtkltm_so \
-    vendor_lib64_libneuralnetworks_sl_driver_mtk_prebuilt_so \
-    vendor_lib64_libneuron_adapter_mc_so \
-    vendor_lib64_libneuron_adapter_mgvi_so \
-    vendor_lib64_libneuron_runtime_7_so \
-    vendor_lib64_libneuron_runtime_so \
-    vendor_lib64_libneuron_wrapper_so \
-    vendor_lib64_libnir_neon_driver_so \
-    vendor_lib64_libpda_usdriver_so \
-    vendor_lib64_libpq_cust_base_so \
-    vendor_lib64_libpq_sec_so \
-    vendor_lib64_libpqconfig_so \
-    vendor_lib64_libpqparamparser_so \
-    vendor_lib64_libvega_common_so \
-    vendor_lib64_libwa_opticalzoomfactor_so \
-    vendor_lib64_libwa_sat_so \
-    vendor_lib64_mtk000_mipi_raw_IdxMgr_so \
-    vendor_lib64_mtk000_mipi_raw_tuning_so \
-    vendor_lib64_ov50d40_mipi_raw_IdxMgr_so \
-    vendor_lib64_ov50d40_mipi_raw_tuning_so \
-    vendor_lib64_ov50d40ofilm_mipi_raw_IdxMgr_so \
-    vendor_lib64_ov50d40ofilm_mipi_raw_tuning_so \
-    vendor_lib64_s5kgn9sp_mipi_raw_IdxMgr_so \
-    vendor_lib64_s5kgn9sp_mipi_raw_tuning_so \
-    vendor_lib64_s5kgn9spofxian_mipi_raw_IdxMgr_so \
-    vendor_lib64_s5kgn9spofxian_mipi_raw_tuning_so \
-    vendor_lib64_sc202cs_mipi_raw_IdxMgr_so \
-    vendor_lib64_sc202cs_mipi_raw_tuning_so \
-    vendor_lib64_sc202cssj_mipi_raw_IdxMgr_so \
-    vendor_lib64_sc202cssj_mipi_raw_tuning_so
+    vendor_lib64_hw_sensors_mt6878_so
 
 PRODUCT_BOOT_JARS += \
     system_ext:mediatek-ims-base \
-    system_ext:mediatek-ims-common \
-    system_ext:mediatek-telecom-common \
-    system_ext:mediatek-telephony-base \
-    system_ext:mediatek-telephony-common
+    system_ext:mediatek-telephony-base
