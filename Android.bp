@@ -25486,6 +25486,10 @@ android_app_import {
     name: "NTCamera",
     owner: "nothing",
     apk: "proprietary/system_ext/priv-app/NTCamera/NTCamera.apk",
+    overrides: [
+        "Camera2",
+        "Aperture",
+    ],
     certificate: "platform",
     dex_preopt: {
         enabled: false,
@@ -25498,6 +25502,13 @@ android_app_import {
     name: "NTGallery",
     owner: "nothing",
     apk: "proprietary/system_ext/priv-app/NTGallery/NTGallery.apk",
+    overrides: [
+        "Glimpse",
+        "Gallery",
+        "Gallery3D",
+        "GalleryNew3D",
+        "Gallery2",
+    ],
     certificate: "platform",
     dex_preopt: {
         enabled: false,
@@ -27065,6 +27076,13 @@ cc_prebuilt_binary {
     },
     prefer: true,
     system_ext_specific: true,
+}
+
+install_symlink {
+    name: "vendor_lib64_sr_models_bin",
+    soc_specific: true,
+    installed_location: "lib64/sr_models.bin",
+    symlink_target: "/vendor/etc/camera/sr_models.bin",
 }
 
 install_symlink {

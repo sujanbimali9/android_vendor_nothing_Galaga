@@ -450,6 +450,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Galaga/proprietary/vendor/etc/camera/siq_ocl_cache_rear_main:$(TARGET_COPY_OUT_VENDOR)/etc/camera/siq_ocl_cache_rear_main \
     vendor/nothing/Galaga/proprietary/vendor/etc/camera/siq_ocl_cache_rear_tele:$(TARGET_COPY_OUT_VENDOR)/etc/camera/siq_ocl_cache_rear_tele \
     vendor/nothing/Galaga/proprietary/vendor/etc/camera/siq_ocl_cache_rear_uw:$(TARGET_COPY_OUT_VENDOR)/etc/camera/siq_ocl_cache_rear_uw \
+    vendor/nothing/Galaga/proprietary/vendor/etc/camera/sr_models.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sr_models.bin \
     vendor/nothing/Galaga/proprietary/vendor/etc/camera/sr_params.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sr_params.xml \
     vendor/nothing/Galaga/proprietary/vendor/etc/camera/superiq_model_front_main:$(TARGET_COPY_OUT_VENDOR)/etc/camera/superiq_model_front_main \
     vendor/nothing/Galaga/proprietary/vendor/etc/camera/superiq_model_rear_main:$(TARGET_COPY_OUT_VENDOR)/etc/camera/superiq_model_rear_main \
@@ -1493,6 +1494,7 @@ PRODUCT_PACKAGES += \
     vtservice
 
 PRODUCT_PACKAGES += \
+    vendor_lib64_sr_models_bin \
     vendor_lib64_hw_audio_primary_mt6878_so \
     vendor_lib64_hw_sensors_mt6878_so
 
