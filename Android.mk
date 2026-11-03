@@ -14,7 +14,7 @@ $(call add-radio-file-sha1-checked,radio/connsys_wifi.img,17d9b4700e84350909555a
 $(call add-radio-file-sha1-checked,radio/dpm.img,cce8007b81babe80308cbc1c8e488628aa57eac5)
 $(call add-radio-file-sha1-checked,radio/gpueb.img,e7f16eee77b8a8bbe55d4ce9a1e5b25f9ea92dac)
 $(call add-radio-file-sha1-checked,radio/gz.img,92d87ac0e0c614e34a83f5631024c4bd82d62002)
-$(call add-radio-file-sha1-checked,radio/lk.img,652f3505c181341995df59e1805541809cfade05)
+$(call add-radio-file-sha1-checked,radio/lk.img,d21d65b6b2fb2a207f1ddb1e9b13ce36a14eeb65)
 $(call add-radio-file-sha1-checked,radio/logo.img,54df561aaa139260623a36515d6bff476995df22)
 $(call add-radio-file-sha1-checked,radio/mcf_ota.img,78acfe3906fbfae786a3abbec45117c789c4d836)
 $(call add-radio-file-sha1-checked,radio/mcupm.img,06bed0c3f8cfdafbb0c6080ba8393c18afb062f9)
