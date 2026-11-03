@@ -1452,7 +1452,6 @@ PRODUCT_PACKAGES += \
     bip_ap \
     ccci_mdinit \
     ccci_rpcd \
-    conninfra_loader \
     fuelgauged \
     fuelgauged_nvram \
     android.hardware.biometrics.face-service.noth \
