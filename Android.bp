@@ -25374,25 +25374,6 @@ android_app_import {
 }
 
 android_app_import {
-    name: "NTGallery",
-    owner: "nothing",
-    apk: "proprietary/system_ext/priv-app/NTGallery/NTGallery.apk",
-    overrides: [
-        "Glimpse",
-        "Gallery",
-        "Gallery3D",
-        "GalleryNew3D",
-        "Gallery2",
-    ],
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
     name: "NothingExperience",
     owner: "nothing",
     apk: "proprietary/system_ext/priv-app/NothingExperience/NothingExperience.apk",

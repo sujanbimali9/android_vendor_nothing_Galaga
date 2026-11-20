@@ -1418,7 +1418,6 @@ PRODUCT_PACKAGES += \
     MtkGbaService \
     MtkTelephonyAssist \
     NTCamera \
-    NTGallery \
     NothingExperience \
     androidx.camera.extensions.impl.advanced \
     com.android.hotwordenrollment.common.util \
