@@ -137,6 +137,40 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "android.hardware.bluetooth.audio-impl-mediatek",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/android.hardware.bluetooth.audio-impl-mediatek.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libbinder_ndk",
+                "libcutils",
+                "libfmq",
+                "liblog",
+                "android.hardware.bluetooth.audio-V3-ndk",
+                "libbluetooth_audio_session_aidl_mtk",
+                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk",
+                "vendor.mediatek.hardware.bluetooth.audio@2.1",
+                "vendor.mediatek.hardware.bluetooth.audio@2.2",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "arm.graphics-V4-ndk",
     owner: "nothing",
     strip: {
@@ -1795,6 +1829,39 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "android.hardware.soundtrigger3-impl",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/android.hardware.soundtrigger3-impl.so",
+            ],
+            shared_libs: [
+                "android.hardware.soundtrigger3-V1-ndk",
+                "libbase",
+                "libbinder_ndk",
+                "libutils",
+                "libcutils",
+                "libhardware",
+                "libaudio_aidl_conversion_common_ndk-mtk",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "audio.primary.mediatek",
     owner: "nothing",
     strip: {
@@ -1809,7 +1876,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libcutils",
                 "libutils",
-                "libalsautils-stock",
+                "libalsautils-mtk",
                 "libhardware_legacy",
                 "libhardware",
                 "libaudioutils",
@@ -2131,6 +2198,81 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "libaedv",
                 "libxml2",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.audio-impl",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/vendor.mediatek.hardware.audio-impl.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libbinder_ndk",
+                "libcutils",
+                "libmediautils_vendor",
+                "libmemunreachable",
+                "liblog",
+                "libutils",
+                "vendor.mediatek.hardware.audio-V1-ndk",
+                "libmedia_helper",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.bluetooth.audio@2.2-impl",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so",
+            ],
+            shared_libs: [
+                "vendor.mediatek.hardware.bluetooth.audio@2.1",
+                "vendor.mediatek.hardware.bluetooth.audio@2.2",
+                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk",
+                "android.hardware.bluetooth.audio-V3-ndk",
+                "libbase",
+                "libbluetooth_audio_session_mediatek",
+                "libcutils",
+                "libfmq",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libhardware",
+                "android.hardware.audio@6.0",
+                "android.hardware.audio.common@6.0",
+                "android.hardware.audio.common@6.0-util",
+                "vendor.mediatek.hardware.audio@6.1",
                 "libc++",
                 "libc",
                 "libm",
@@ -3505,6 +3647,30 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libMobileAPI_SHARED",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libMobileAPI_SHARED.so",
+            ],
+            shared_libs: [
+                "libm",
+                "liblog",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libMtkMediaController",
     owner: "nothing",
     strip: {
@@ -4654,7 +4820,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libalsautils-stock",
+    name: "libalsautils-mtk",
     owner: "nothing",
     strip: {
         none: true,
@@ -4662,7 +4828,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libalsautils-stock.so",
+                "proprietary/vendor/lib64/libalsautils-mtk.so",
             ],
             shared_libs: [
                 "liblog",
@@ -5828,6 +5994,41 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libaudio_aidl_conversion_common_ndk-mtk",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libaudio_aidl_conversion_common_ndk-mtk.so",
+            ],
+            shared_libs: [
+                "android.media.audio.common.types-V2-ndk",
+                "android.hardware.audio.common-V2-ndk",
+                "libbinder",
+                "liblog",
+                "libshmemcompat",
+                "libstagefright_foundation",
+                "libutils",
+                "shared-file-region-aidl-cpp",
+                "framework-permission-aidl-cpp",
+                "libbinder_ndk",
+                "libbase",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libaudio_param_parser-vnd",
     owner: "nothing",
     strip: {
@@ -6230,6 +6431,73 @@ cc_prebuilt_library_shared {
                 "libm",
                 "libc++",
                 "libc",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libbluetooth_audio_session_aidl_mtk",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libbluetooth_audio_session_aidl_mtk.so",
+            ],
+            shared_libs: [
+                "android.hardware.bluetooth.audio@2.0",
+                "android.hardware.bluetooth.audio@2.1",
+                "libbase",
+                "libcutils",
+                "libbinder_ndk",
+                "libfmq",
+                "liblog",
+                "android.hardware.bluetooth.audio-V3-ndk",
+                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk",
+                "libhidlbase",
+                "libxml2",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libbluetooth_audio_session_mediatek",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libbluetooth_audio_session_mediatek.so",
+            ],
+            shared_libs: [
+                "vendor.mediatek.hardware.bluetooth.audio@2.1",
+                "vendor.mediatek.hardware.bluetooth.audio@2.2",
+                "libbase",
+                "libcutils",
+                "libfmq",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
                 "libdl",
             ],
         },
@@ -22976,6 +23244,37 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libAACeffect_NT",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/soundfx/libAACeffect_NT.so",
+            ],
+            shared_libs: [
+                "libMobileAPI_SHARED",
+                "libcutils",
+                "libutils",
+                "libbase",
+                "libaudioutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "soundfx",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "tms-cos-dl-common",
     owner: "nothing",
     strip: {
@@ -23191,6 +23490,38 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so",
             ],
             shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.audio@6.1",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.mediatek.hardware.audio@6.1.so",
+            ],
+            shared_libs: [
+                "android.hardware.audio.common@6.0",
+                "android.hardware.audio.effect@6.0",
+                "android.hardware.audio@6.0",
+                "android.hidl.safe_union@1.0",
                 "libhidlbase",
                 "liblog",
                 "libutils",
@@ -25423,6 +25754,17 @@ prebuilt_apex {
 }
 
 android_app_import {
+    name: "NothingAudioEffectService",
+    owner: "nothing",
+    apk: "proprietary/system/priv-app/NothingAudioEffectService/NothingAudioEffectService.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+}
+
+android_app_import {
     name: "HotwordEnrollmentOKGoogleHEXAGON",
     owner: "nothing",
     apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk",
@@ -25489,25 +25831,6 @@ android_app_import {
     overrides: [
         "Camera2",
         "Aperture",
-    ],
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "NTGallery",
-    owner: "nothing",
-    apk: "proprietary/system_ext/priv-app/NTGallery/NTGallery.apk",
-    overrides: [
-        "Glimpse",
-        "Gallery",
-        "Gallery3D",
-        "GalleryNew3D",
-        "Gallery2",
     ],
     certificate: "platform",
     dex_preopt: {

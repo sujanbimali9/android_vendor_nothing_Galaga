@@ -8,6 +8,7 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     vendor/nothing/Galaga/proprietary/system/etc/morpho_image_refiner_tuning_params.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/morpho_image_refiner_tuning_params.xml \
     vendor/nothing/Galaga/proprietary/system/etc/sysconfig/nothing-hiddenapi-package-allowlist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/nothing-hiddenapi-package-allowlist.xml \
+    vendor/nothing/Galaga/proprietary/system/etc/sysconfig/preinstalled-packages-audioeffect.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/preinstalled-packages-audioeffect.xml \
     vendor/nothing/Galaga/proprietary/system_ext/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.vtservice.rc \
     vendor/nothing/Galaga/proprietary/system_ext/etc/permissions/advancedSample_camera_extensions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/advancedSample_camera_extensions.xml \
     vendor/nothing/Galaga/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
@@ -102,6 +103,11 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Galaga/proprietary/vendor/etc/MNL_Config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/MNL_Config.xml \
     vendor/nothing/Galaga/proprietary/vendor/etc/SEC_THN31_FW_VTP.txt.bin:$(TARGET_COPY_OUT_VENDOR)/etc/SEC_THN31_FW_VTP.txt.bin \
     vendor/nothing/Galaga/proprietary/vendor/etc/VideoLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/VideoLog_dynamic.xml \
+    vendor/nothing/Galaga/proprietary/vendor/etc/aac/ID05-2_6kHz.txt:$(TARGET_COPY_OUT_VENDOR)/etc/aac/ID05-2_6kHz.txt \
+    vendor/nothing/Galaga/proprietary/vendor/etc/aac/ID06-2_6kHz.txt:$(TARGET_COPY_OUT_VENDOR)/etc/aac/ID06-2_6kHz.txt \
+    vendor/nothing/Galaga/proprietary/vendor/etc/aac/ID07-2_6kHz.txt:$(TARGET_COPY_OUT_VENDOR)/etc/aac/ID07-2_6kHz.txt \
+    vendor/nothing/Galaga/proprietary/vendor/etc/aac/ID08-2_6kHz.txt:$(TARGET_COPY_OUT_VENDOR)/etc/aac/ID08-2_6kHz.txt \
+    vendor/nothing/Galaga/proprietary/vendor/etc/aac/ID09-2_6kHz.txt:$(TARGET_COPY_OUT_VENDOR)/etc/aac/ID09-2_6kHz.txt \
     vendor/nothing/Galaga/proprietary/vendor/etc/aac_richtap.config:$(TARGET_COPY_OUT_VENDOR)/etc/aac_richtap.config \
     vendor/nothing/Galaga/proprietary/vendor/etc/audio_device.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_device.xml \
     vendor/nothing/Galaga/proprietary/vendor/etc/audio_param/AudioParamOptions_mgvi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/AudioParamOptions_mgvi.xml \
@@ -540,6 +546,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Galaga/proprietary/vendor/etc/mali_platform.config:$(TARGET_COPY_OUT_VENDOR)/etc/mali_platform.config \
     vendor/nothing/Galaga/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
     vendor/nothing/Galaga/proprietary/vendor/etc/meow.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/meow.cfg \
+    vendor/nothing/Galaga/proprietary/vendor/etc/mobile/mobile.config:$(TARGET_COPY_OUT_VENDOR)/etc/mobile/mobile.config \
     vendor/nothing/Galaga/proprietary/vendor/etc/mpe.conf:$(TARGET_COPY_OUT_VENDOR)/etc/mpe.conf \
     vendor/nothing/Galaga/proprietary/vendor/etc/mtk_platform_codecs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_platform_codecs_config.xml \
     vendor/nothing/Galaga/proprietary/vendor/etc/nhw:$(TARGET_COPY_OUT_VENDOR)/etc/nhw \
@@ -601,6 +608,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Galaga/proprietary/vendor/firmware/lib3a.ccu_dummy:$(TARGET_COPY_OUT_VENDOR)/firmware/lib3a.ccu_dummy \
     vendor/nothing/Galaga/proprietary/vendor/firmware/mali_csffw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mali_csffw.bin \
     vendor/nothing/Galaga/proprietary/vendor/firmware/remoteproc_scp:$(TARGET_COPY_OUT_VENDOR)/firmware/remoteproc_scp \
+    vendor/nothing/Galaga/proprietary/vendor/firmware/soc7_0_ram_bt_1_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc7_0_ram_bt_1_1_hdr.bin \
     vendor/nothing/Galaga/proprietary/vendor/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_VENDOR)/firmware/tfa98xx.cnt \
     vendor/nothing/Galaga/proprietary/vendor/firmware/txpowerctrl.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/txpowerctrl.cfg \
     vendor/nothing/Galaga/proprietary/vendor/firmware/valhall-1691526.wa:$(TARGET_COPY_OUT_VENDOR)/firmware/valhall-1691526.wa \
@@ -611,6 +619,7 @@ PRODUCT_PACKAGES += \
     7816-3-T1 \
     APUWareApusysAidlServer \
     APUWareUtilsAidlServer \
+    android.hardware.bluetooth.audio-impl-mediatek \
     arm.graphics-V4-ndk \
     arm.mali.platform-V2-ndk \
     com.nothing.node.b2j \
@@ -666,6 +675,7 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss-impl-mediatek \
     android.hardware.graphics.allocator-V2-mediatek \
     android.hardware.graphics.mapper@4.0-impl-mediatek \
+    android.hardware.soundtrigger3-impl \
     audio.primary.mediatek \
     fingerprint.default \
     gps.default \
@@ -675,6 +685,8 @@ PRODUCT_PACKAGES += \
     mtkgeofence.default \
     sensors.mediatek.V2.0 \
     sound_trigger.primary.default \
+    vendor.mediatek.hardware.audio-impl \
+    vendor.mediatek.hardware.bluetooth.audio@2.2-impl \
     vendor.mediatek.hardware.camera.atms_aidl@1.0-impl \
     vendor.mediatek.hardware.camera.bgservice_aidl@1.0-impl \
     vendor.mediatek.hardware.camera.isphal_aidl@1.0-impl \
@@ -722,6 +734,7 @@ PRODUCT_PACKAGES += \
     libFrameRecord \
     libJpgEncPipe \
     libMcClient \
+    libMobileAPI_SHARED \
     libMtkMediaController \
     libMtkSpeechEnh \
     libNoFpsActor \
@@ -764,7 +777,7 @@ PRODUCT_PACKAGES += \
     libaiseg_sun \
     libaiselector \
     libalgo.aosp.log \
-    libalsautils-stock \
+    libalsautils-mtk \
     libanc_dc_base \
     libanc_fullhdr \
     libanc_fullhdr_impl \
@@ -810,6 +823,7 @@ PRODUCT_PACKAGES += \
     libarm_gralloc_properties_sysprop \
     libarmnn \
     libarmnn_ndk.mtk.vndk \
+    libaudio_aidl_conversion_common_ndk-mtk \
     libaudio_param_parser-vnd \
     libaudiocompensationfilter_vendor \
     libaudiocompensationfilterc \
@@ -824,6 +838,8 @@ PRODUCT_PACKAGES += \
     libaurisysdemo \
     libbessound_hd_mtk_vendor \
     libblisrc32_vendor \
+    libbluetooth_audio_session_aidl_mtk \
+    libbluetooth_audio_session_mediatek \
     libbluetooth_mtk \
     libbluetooth_mtk_pure \
     libbt-vendor \
@@ -1330,6 +1346,7 @@ PRODUCT_PACKAGES += \
     sc202cs_mipi_raw_tuning \
     sc202cssj_mipi_raw_IdxMgr \
     sc202cssj_mipi_raw_tuning \
+    libAACeffect_NT \
     tms-cos-dl-common \
     tms-cos-dl-ree \
     tms-utils \
@@ -1338,6 +1355,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.apuware.apusys-V3-ndk \
     vendor.mediatek.hardware.apuware.utils-V1-ndk \
     vendor.mediatek.hardware.apuware.utils@2.0 \
+    vendor.mediatek.hardware.audio@6.1 \
     vendor.mediatek.hardware.audio@8.1 \
     vendor.mediatek.hardware.bluetooth.audio-V1-ndk \
     vendor.mediatek.hardware.bluetooth.audio@2.1 \
@@ -1416,13 +1434,13 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.videotelephony-V1-ndk \
     vendor.mediatek.hardware.videotelephony@1.0 \
     com.google.android.widevine.nonupdatable \
+    NothingAudioEffectService \
     HotwordEnrollmentOKGoogleHEXAGON \
     HotwordEnrollmentXGoogleHEXAGON \
     ImsService \
     MtkGbaService \
     MtkTelephonyAssist \
     NTCamera \
-    NTGallery \
     NothingExperience \
     androidx.camera.extensions.impl.advanced \
     com.android.hotwordenrollment.common.util \
